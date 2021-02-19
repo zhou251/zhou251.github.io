@@ -21,7 +21,7 @@ minify: false
 custom_file_path:
   #head: source/_data/head.njk
   #header: source/_data/header.njk
-  #sidebar: source/_data/sidebar.njk
+  sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   #postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
@@ -43,7 +43,7 @@ custom_file_path:
 scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 
 # ---------------------------------------------------------------
@@ -970,8 +970,8 @@ tag_cloud:
     textColor: '#f60'
     textHeight: 25
     outlineColor: '#FF5511'
-    maxSpeed: 0.5 # range from [0.01 ~ 1]
-    pauseOnSelected: false # true means pause the cloud tag movement when highlight a tag
+    maxSpeed: 0.4 # range from [0.01 ~ 1]
+    pauseOnSelected: true # true means pause the cloud tag movement when highlight a tag
   
 
 passage_end_tag:
@@ -997,3 +997,17 @@ live2d:
     height: 900
   mobile:
     show: false #是否在手机端显示
+
+canvas_nest:
+  enable: true    #开启canvas
+  onmobile: true # 是否在移动站开启canvas
+  color: '34,34,34' # 颜色值
+  opacity: 0.5 # 数值 0~1 ，线条透明度
+  zIndex: -1 # 背景叠层大小，-1代表放在文章的后面
+  count: 200 # 线条数量
+
+# Tab Title Change | 标签页标题切换
+tab_title_change: 
+  enable: true
+  left_tab_title: '(つェ⊂) 我藏好了哦~ '
+  return_tab_title: '(*´∇｀*) 被你发现啦~ '

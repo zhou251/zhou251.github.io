@@ -103,7 +103,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 plugins: hexo-generate-feed
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -185,14 +185,24 @@ neat_js:
     - '**/index.js'
     - '**/clicklove.js'
     - '**/firework.js'
-moon_menu:
-  back2top:
-    enable: true
-    icon: fas fa-chevron-up
-    func: back2top
-    order: -1
-  back2bottom:
-    enable: true
-    icon: fas fa-chevron-down
-    func: back2bottom
-    order: -2
+#moon_menu:
+  #back2top:
+    #enable: false
+    #icon: fas fa-chevron-up
+    #func: back2top
+    #order: -1
+  #back2bottom:
+    #enable: false
+    #icon: fas fa-chevron-down
+    #func: back2bottom
+    #order: -2
+  
+  # hexo-tag-cloud
+tag_cloud:
+    textFont: Trebuchet MS, Helvetica
+    textColor: '#f60'
+    textHeight: 25
+    outlineColor: '#E2E1D1'
+    maxSpeed: 0.5
+    pauseOnSelected: false # true 意味着当选中对应 tag 时,停止转动
+    

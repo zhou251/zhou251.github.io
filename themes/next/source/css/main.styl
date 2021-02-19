@@ -38,8 +38,34 @@ for $inject_mixin in hexo-config('injects.mixin')
 // --------------------------------------------------
 @import '_schemes/' + $scheme;
 
+//个人添加
+@import "_other.styl";
+
 
 // Custom Layer
 // --------------------------------------------------
 for $inject_style in hexo-config('injects.style')
   @import $inject_style;
+.tagred
+  background: #feecf0
+  color:#cc0f35
+
+.tagyellow
+  background: #f4e9ff
+  color:#8a51c0
+
+.tagblue
+  background: #eef3fc
+  color:#2160c4
+
+.taggreen
+  background: #ebfffc
+  color:#00947e
+
+.tagpurple
+  background: #f4e9ff
+  color:#8a51c0
+
+.taggrown
+  background: #fffbeb
+  color:#947600

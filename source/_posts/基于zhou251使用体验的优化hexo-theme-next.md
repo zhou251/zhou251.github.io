@@ -1,11 +1,12 @@
 ---
 title: 基于zhou251使用体验的hexo-theme-next优化
-date: 2021-02-17 16:49:55
 author: zhou251
-tags: 
-- hexo
+tags:
+  - hexo
 categories:
-- 教程
+  - 教程
+abbrlink: 54111
+date: 2021-02-17 16:49:55
 ---
 # 使用不蒜子统计访问人数
 > 网上有很多教程，什么不蒜子网址更新之类的。  

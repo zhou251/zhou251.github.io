@@ -1,7 +1,8 @@
 ---
-title: 文章分类
-date: 2021-02-15 17:41:30
-type: "categories"
-layout: "categories"
-comments: false #关闭评论
+title: categories
+date: 2021-02-19 23:16:41
+author:
+tags:
+categories:
+layout: category
 ---

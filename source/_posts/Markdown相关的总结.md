@@ -1,12 +1,13 @@
 ---
 title: markdown相关的总结
-date: 2021-02-17 11:29:55
 author: zhou251
-tags: 
-- markdown
-- 写作
+tags:
+  - markdown
+  - 写作
 categories:
-- 教程
+  - 教程
+abbrlink: 25796
+date: 2021-02-17 11:29:55
 ---
 ## 标题
 
