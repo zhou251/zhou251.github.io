@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f5d2fcc-b3c7-49d6-b12f-3dd436d5d1ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/themes/Yilia-Pro/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Yilia-Pro/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia-plus/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/languages/zh-CN.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia-plus/languages/zh-CN.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/layout/_partial/article.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia-plus/layout/_partial/article.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/layout/_partial/css.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia-plus/layout/_partial/css.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/layout/_partial/post/share.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia-plus/layout/_partial/post/share.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/layout/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia-plus/layout/layout.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/layout/post.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia-plus/layout/post.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/source/img/alipay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/source/img/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia-plus/source/main.a5fda8.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia-plus/source/main.a5fda8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yilia/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia/_config.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/Yilia-Pro" />
+  </component>
+  <component name="ProjectId" id="1oZEfgptL8Xiu30e2e4c1sXkWVr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f5d2fcc-b3c7-49d6-b12f-3dd436d5d1ad" name="Default Changelist" comment="" />
+      <created>1613485827626</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613485827626</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

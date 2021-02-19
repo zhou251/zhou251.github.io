@@ -1,0 +1,76 @@
+//文章目录默认展开
+.post-toc .nav .nav-child { display: block; }
+.post-toc ol {  
+  font-size : 13px;     
+} 
+
+//全局布局美化代码
+body {
+    background-image:url(https://i.loli.net/2021/02/16/ODbMCALEm7uy5i2.png); //背景图片地址
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 30% 20%;
+}
+
+
+//博客内容透明化
+//文章内容的透明度设置
+.content-wrap {
+  opacity: 0.85;
+}
+
+//侧边框的透明度设置
+.sidebar {
+  transition-duration: 0.4s;  
+  opacity: 0.8;  // 透明度
+  border-radius: 30px 30px 30px 30px; //边框圆角
+}
+
+// 侧边头像框内部
+.sidebar-inner {
+  background: var(--content-bg-color);
+  border-radius: 30px 30px 30px 30px; //边框圆角
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  box-sizing: border-box;
+  color: var(--text-color);
+  width: 240px;
+  opacity: 0.8;
+  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+//菜单栏的透明度设置
+.header-inner {
+  background: rgba(255,255,255,0.8);
+  border-radius: 0px 0px 30px 30px; //边框圆角
+  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+//搜索框（local-search）的透明度设置
+.popup {
+  opacity: 0.75;
+  border-radius: 30px 30px 30px 30px;
+}
+
+//第一篇博客样式
+.post-block {
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 24px;
+  padding: 20px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+//除第一篇博客之外的博客样式
+.post-block + .post-block {
+  background-color: rgba(255, 255, 255, 1);
+  //margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 20px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+.pagination {
+    border-radius: 30px 80px 30px 80px;
+    box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
