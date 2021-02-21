@@ -213,4 +213,4 @@ import:
     - "<meta name='msapplication-TileColor' content='#1BC3FB'>"
   link:
     - "<link rel='stylesheet' href='/css/iconfont.css'>"
-    - "<link rel='shortcut icon' type='image/x-icon' href='https://i.loli.net/2021/02/20/VUt1lNOAE57YPQy.jpg'>"
+    - "<link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/zhou251/CDN@1.1/hexo-volantis/img/可达鸭.ico'>"
