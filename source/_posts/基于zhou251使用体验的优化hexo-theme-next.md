@@ -2,7 +2,7 @@
 title: 基于zhou251使用体验的hexo-theme-next优化
 author: zhou251
 tags:
-  - hexo
+  - BLOG
 categories:
   - 教程
 abbrlink: 54111
@@ -61,4 +61,4 @@ busuanzi_count:
   post_views_icon: fa fa-eye
 
   ##搜索busuanzi并开启(true)。
-  ```
+```

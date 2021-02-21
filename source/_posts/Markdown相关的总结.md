@@ -2,7 +2,7 @@
 title: markdown相关的总结
 author: zhou251
 tags:
-  - markdown
+  - MARKDOWN
   - 写作
 categories:
   - 教程
@@ -318,8 +318,9 @@ print('hello nick')
 **效果：**
 
 > 内容
->> 内容
->>> 内容
+> > 内容
+> >
+> > > 内容
 
 ## 列表
 

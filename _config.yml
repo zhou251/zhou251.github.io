@@ -197,12 +197,21 @@ neat_js:
     #func: back2bottom
     #order: -2
   
-  # hexo-tag-cloud
+# hexo-tag-cloud
 tag_cloud:
-    textFont: Trebuchet MS, Helvetica
-    textColor: '#f60'
+    textFont: 'Trebuchet MS, Helvetica'
+    textColor: '#333'
     textHeight: 25
     outlineColor: '#E2E1D1'
-    maxSpeed: 0.5
-    pauseOnSelected: false # true 意味着当选中对应 tag 时,停止转动
-    
+    maxSpeed: 0.5 # range from [0.01 ~ 1]
+    pauseOnSelected: false # true means pause the cloud tag movement when highlight a tag
+  
+  # 全局导入
+import:
+  meta:
+    - "<meta name='theme-color' content='#FFFFFF'>"
+    - "<meta name='msapplication-TileColor' content='#1BC3FB'>"
+  link:
+    - "<link rel='shortcut icon' href='images/可达鸭.ico'>"
+    - "<link rel='stylesheet' href='/css/iconfont.css'>"
+
