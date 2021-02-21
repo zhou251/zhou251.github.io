@@ -1,23 +1,26 @@
 ---
 layout: page
-title: 🐱‍🚀留言板
-meta:
- header: [centertitle]
-bottom_meta: [donate]
+title: 
+top_meta: false
+bottom_meta: false
 sidebar: []
 ---
+
+<div style="margin-top:2.5rem;text-align:center">
+<span class="milky">💬留言板</span>
+</div>
+
+{% p,😘 是我，是我，就是我！%}
 
 <div class="poem-wrap">
   <div class="poem-border poem-left"></div>
   <div class="poem-border poem-right"></div>
-    <h1>
-        一言
-    </h1>
+    <h1>说给你听</h1>
     <p id="poem">挑选中...</p>
     <p id="info">
 </div>
 
-{% p center,有什么想说的，有什么想问，就在下方留言吧，收到我会第一时间回复！请尽情灌水吧！😉 %}
+{% p,有什么想说的，有什么想问，就在下方留言吧，收到我会第一时间回复！请尽情灌水吧！😉 %}
 
 <script>
     $.get("https://v1.hitokoto.cn?c=i&c=j", function (data, status) {
@@ -35,6 +38,16 @@ sidebar: []
 </script>
 
 <style>
+.milky {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    color: #333333;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(255, 102, 102) 0px, rgb(255, 102, 51) 100%);
+}
 .poem-wrap {
     position: relative;
     width: 730px;

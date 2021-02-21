@@ -7,6 +7,23 @@ sitemap: false
 valine:
   placeholder: 有什么想对我说的呢？
 ---
+<div style="margin-top:2.5rem;text-align:center">
+<span class="milky">😎 关于我</span>
+</div>
+
+<style>
+.milky {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    color: #333333;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(255, 102, 102) 0px, rgb(255, 102, 51) 100%);
+}
+</style>
+
 {# Botui聊天机器人样式 #}
 <link rel="stylesheet" href="/css/botui.min.css" />
 {# <link rel="stylesheet" href="/css/botui-theme-default.css" /> #}

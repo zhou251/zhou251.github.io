@@ -19,7 +19,7 @@ timezone: 'Asia/Shanghai'
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: https://zhou251.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:title/ #:abbrlink/ 
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -33,7 +33,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: 
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -212,6 +212,5 @@ import:
     - "<meta name='theme-color' content='#FFFFFF'>"
     - "<meta name='msapplication-TileColor' content='#1BC3FB'>"
   link:
-    - "<link rel='shortcut icon' href='images/可达鸭.ico'>"
     - "<link rel='stylesheet' href='/css/iconfont.css'>"
-
+    - "<link rel='shortcut icon' type='image/x-icon' href='https://i.loli.net/2021/02/20/VUt1lNOAE57YPQy.jpg'>"

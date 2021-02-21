@@ -42,7 +42,7 @@ navbar:
     - name: 相册
       icon: iconfont iconxiangce2
       url: /photos/
-    - name: 留言板
+    - name: 留言
       icon: fas fa-comments
       url: guestbook/
     #- name: 友链
@@ -204,7 +204,7 @@ article:
       author:
         avatar: /images/小可达鸭.jpg
         name: zhou251
-        url: /
+        url: /about/
       # 文章创建日期
       date:
         icon: fas fa-calendar-alt
@@ -371,7 +371,7 @@ sidebar:
       display: [desktop, mobile] # [desktop, mobile]
       avatar: /images/黑色微笑.jpg #https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
       shape: rectangle # circle, rectangle
-      url: /
+      url: /about/
       title: zhou251
       subtitle: 
       jinrishici: #true # Poetry Today. You can set a string, and it will be displayed when loading fails.
@@ -428,8 +428,8 @@ sidebar:
       min_font: 16
       max_font: 24
       color: true
-      start_color: '#f63'
-      end_color: '#f33'
+      start_color: '#222'
+      end_color: '#222'
     
     
     # ---------------------------------------
@@ -550,7 +550,7 @@ plugins:
     enable: true
     js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js
     onlypost: false
-    loadingImg: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@3/img/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg
+    loadingImg:  https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@3/img/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg
     blurIn: true # 模糊加载效果 （loadingImg为空时有效）
 
   ######## Plugins to optimize the experience:
@@ -1010,3 +1010,26 @@ seo:
     # robots can be written in front-matter
 ############################### SEO ############################### > end
 
+#github footer 样式
+github_css: true
+github_footer:
+  - category: Powered      #项目
+    content: Hexo          #内容
+    tips: 由 Hexo 强力驱动  #链接提示
+    background_color: '#007ec6'   #背景颜色
+    href: https://hexo.io/
+  - category: Host By      #项目
+    content: GitHub & Coding          #内容
+    tips: 静态网页托管于 GitHub Pages 和 Coding Pages  #链接提示
+    background_color: '#4dc820'   #背景颜色
+    href: https://github.com/
+  - category: DNS     #项目
+    content: Aliyun         #内容
+    tips: 阿里云提供域名相关服务  #链接提示
+    background_color: '#8833d7'   #背景颜色
+    href: https://www.aliyun.com/
+  #- category: CDN     #项目
+  #  content: 又拍云         #内容
+  #  tips: 阿里云提供域名相关服务  #链接提示
+  #  background_color: '#ce651b'   #背景颜色
+  #  href: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
