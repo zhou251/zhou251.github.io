@@ -30,8 +30,8 @@ valine:
 
 <div>
     <div id="hello-xuxuy" class="pop-container">
-        <p style="text-align: center;">真（ま）白（しろ）</p>
-        <p style="text-align: center;">对话中...</p>
+        <p style="text-align: center;">编号89757为您服务</p>
+        <p style="text-align: center;">请您按提示点击按钮</p>
         <bot-ui></bot-ui>
     </div>
 </div>

@@ -17,10 +17,11 @@ info:
 
 ############################### Navigation Bar ############################### > start
 # 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
+##导航栏
 navbar:
   visiable: auto # always, auto
-  logo: # choose [img] or [icon + title]
-    img: /images/小可达鸭.jpg
+  logo: # choose [img] or [icon + title]  ##导航栏图标相关
+    img: /images/小可达鸭.jpg  
     icon: #/images/可达鸭.png
     title:
   menu:
@@ -28,31 +29,40 @@ navbar:
       icon: iconfont iconHOMEMESSAGE
       url: /
     - name: 找文章
-      icon: fas fa-folder-open
+      icon: iconfont iconbox
       rows:
         - name: 标签
-          icon: fas fa-tags
+          icon: iconfont iconbianpinghuatubiaosheji-
           url: tags/
         - name: 分类
-          icon: fas fa-th
+          icon: iconfont iconfenlei
           url: categories/
         - name: 归档
-          icon: fas fa-archive
+          icon: iconfont iconguidang
           url: archives/
     - name: 相册
       icon: iconfont iconxiangce2
-      url: /photos/
-    - name: 留言
-      icon: fas fa-comments
+      url: photos/
+    - name: 留言板
+      icon: iconfont iconliuyanguanli
       url: guestbook/
+    - name: 更多
+      icon: iconfont iconmore
+      rows:
+        - name: 文档中心
+          icon: iconfont iconwendang
+          url: documentation/
+        - name: 资源合集
+          icon: iconfont iciconziyuanonfenlei
+          url: resources/
     #- name: 友链
     #  icon: fas fa-link
     #  url: friends/
-    - name: 关于
-      icon: fas fa-info-circle
+    - name: 关于我
+      icon: iconfont iconguanyuwomen
       url: about/
     - name: 关灯 # 可自定义
-      icon: fas fa-moon # 可自定义
+      icon: iconfont iconyejianmoshi # 可自定义
       toggle: darkmode
   search: 搜索中...(oﾟvﾟo)ノ   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
@@ -69,38 +79,38 @@ cover:
     others: false # can be written in front-matter 'cover: true'
   background: #https://i.loli.net/2021/02/19/w4liNBts9OJXP2E.jpg
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
-  logo: /images/cover.png
+  logo: https://i.loli.net/2021/02/22/MvUXK9REHW7GcQ5.png
   title: '' #'米花的小窝'''
   subtitle: ''
   search: A Wonderful Theme for Hexo # search bar placeholder
   features:
     - name: 首页
       icon: #iconfont iconHOMEMESSAGE
-      img: /images/HOME MESSAGE.png
+      img: https://i.loli.net/2021/02/21/ryt2vsUfTRoAPMF.png
       url: /
     - name: 相册
       icon: #iconfont iconziyuan333
-      img: /images/相册.png
+      img: https://i.loli.net/2021/02/21/PgvJDKUxECOMoTA.png
       url: /photos/
     - name: 标签
       icon: #iconfont iconbianpinghuatubiaosheji-
-      img: /images/标签.png
+      img: https://i.loli.net/2021/02/21/TDk36aZYUByquW9.png
       url: /tags/
     - name: 分类
       icon: #iconfont iconfenlei
-      img: /images/分类.png
+      img: https://i.loli.net/2021/02/21/7AgcTQok9IhRumV.png
       url: /categories/
     - name: 归档
       icon: #iconfont iconguidang
-      img: /images/归档.png
+      img: https://i.loli.net/2021/02/21/aU9pCZcHJeTqNA4.png
       url: /archives/
     - name: 公益404
       icon: #iconfont iconliebiaodaohang_gongyi
-      img: /images/列表导航_公益.png
+      img: https://i.loli.net/2021/02/21/3WLhvlmOJCdfcVU.png
       url: /404/
     - name: 关于
       icon: #iconfont iconguanyuwo
-      img: /images/关于我.png
+      img: https://i.loli.net/2021/02/21/XJwh2783oEiZPI4.png
       url: /about/
     #- name: 文档
     #  icon: #
@@ -173,7 +183,7 @@ article:
       # 相关文章，需要安装插件 (for layout: post)
       # npm i hexo-related-popular-posts
       related_posts:
-        enable: true
+        enable: #true
         title: 相关文章
         icon: fas fa-bookmark
         max_count: 5
@@ -202,7 +212,7 @@ article:
       # 默认文章作者（可在 _data/author.yaml 中增加其他作者，并在 front-matter 中设置）
       # https://volantis.js.org/advanced-settings/#多人协同
       author:
-        avatar: /images/小可达鸭.jpg
+        avatar: https://i.loli.net/2021/02/21/5HjoGzRChJN2ixI.jpg
         name: zhou251
         url: /about/
       # 文章创建日期
@@ -369,18 +379,21 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: /images/黑色微笑.jpg #https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      avatar: https://i.loli.net/2021/02/09/4gMEQeRCnZFidNL.jpg #https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
       shape: rectangle # circle, rectangle
       url: /about/
       title: zhou251
       subtitle: 
       jinrishici: #true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
-        - icon: fab fa-github
+        - icon: #fab fa-github
+          img: https://i.loli.net/2021/02/21/UqhfOWtLguQ3bGd.png
           url: https://github.com/zhou251
-        - icon: fas fa-envelope
+        - icon: #fas fa-envelope
+          img: https://i.loli.net/2021/02/21/zyhlw4C7RQaco3D.png
           url: mailto:zhousl251@foxmail.com
-        - icon: fas fa-rss
+        - icon: #fas fa-rss
+          img: https://i.loli.net/2021/02/21/5i8qONoVCDPKRxl.png
           url: /atom.xml
         #- icon: fas fa-headphones-alt
         #  url: /
@@ -399,14 +412,15 @@ sidebar:
     #公告
     repos:
       class: text
-      display: [desktop] # [desktop, mobile]
+      display: [desktop, mobile] # [desktop, mobile]
       header:
         icon: iconfont icongonggao
         title: 公告
         url: 
       content:
-        - test1
-        - test2
+        - 🔨 本站装修中。。。
+        - 💪 输入输出，注重内容
+        - 🔊 本站默认替换了右键菜单，唤醒原系统菜单：`Ctrl` + `右键` ~
     
     # category widget
     category:
@@ -661,7 +675,7 @@ plugins:
   # APlayer is only available in mainland China.
   # APlayer config: https://github.com/metowolf/MetingJS
   aplayer:
-    enable: #true
+    enable: true
     js:
       aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js
       meting: https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js
@@ -754,15 +768,27 @@ plugins:
 ############################### Rightmenu ############################### > start
 # 自定义右键菜单
 rightmenu:
-  enable: #true
+  enable: true
   # hr: 分割线, music: 音乐控制器
-  layout: [home, help, examples, contributors, hr, source_docs, source_theme, hr, print, hr, dark_mode, hr, music]
+  layout: [home, photos, about, guestbook, dark_mode, music]
   # 可选功能项
   print:
     name: 打印页面
     icon: fa fa-print
     onclick: document.execCommand('print')
   # 自定义菜单的格式如下
+  about:
+    name: 了解我
+    icon: iconfont iconguanyuwomen
+    url: about/
+  guestbook:
+    name: 给我留言
+    icon: iconfont iconmsg-o
+    url: guestbook/
+  photos:
+    name: 相册
+    icon: iconfont iconxiangce2
+    url: photos/
   help:
     name: 常见问题
     icon: fa fa-question

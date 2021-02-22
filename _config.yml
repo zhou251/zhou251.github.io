@@ -113,30 +113,55 @@ deploy:
   branch: main
   
 jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true 
+  meta: true
+  drafts: false
+  file: content.json
+  keywords: undefined
+  dateFormat: undefined
+  pages:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: false
+    text: true
+    raw: false
+    content: false
+    author: true
+  posts:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: false
+    text: true
+    raw: false
+    content: false
+    author: true
+    categories: true
+    tags: true
   
 # local search
+#search:
+  #path: search.xml
+  #field: post
+ # format: html
+  #limit: 10000
+
 search:
   path: search.xml
   field: post
-  format: html
-  limit: 10000
+  content: true
 
 # hexo-symbols-count-time
 symbols_count_time:
