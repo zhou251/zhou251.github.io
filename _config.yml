@@ -17,9 +17,13 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://zhou251.github.io/
+url: https://zhou251.top/
 root: /
-permalink: :year/:month/:day/:title/ #:abbrlink/ 
+permalink: posts/:abbrlink/ #:year/:month/:day/:title/ #:abbrlink/ 
+# abbrlink config
+abbrlink:
+  alg: crc16  # 算法：crc16(default) and crc32
+  rep: dec    # 进制：dec(default) and hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
