@@ -77,9 +77,9 @@ cover:
     home: true
     archive: false
     others: false # can be written in front-matter 'cover: true'
-  background: #https://i.loli.net/2021/02/19/w4liNBts9OJXP2E.jpg
+  background: #https://i.loli.net/2021/02/21/8XnjADegvZp3ON2.jpg
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
-  logo: https://i.loli.net/2021/02/22/MvUXK9REHW7GcQ5.png
+  logo: https://i.loli.net/2021/02/22/TQZkstSwVyRjPvL.png
   title: '' #'米花的小窝'''
   subtitle: ''
   search: A Wonderful Theme for Hexo # search bar placeholder
@@ -263,7 +263,7 @@ article:
 
 ############################### Comments ############################### > start
 comments:
-  title: <i class='fas fa-comments'></i> 评论
+  title: <i class='fas fa-comments'></i> 网络不是法外之地，请谨言慎行！！！
   subtitle:
   service: twikoo # valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
   # Valine
@@ -623,32 +623,34 @@ plugins:
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       # CHINA
-      - /images/wallpaper/china/1-tuya.jpg
-      - /images/wallpaper/china/2-tuya.jpg
-      - /images/wallpaper/china/3-tuya.jpg
-      - /images/wallpaper/china/4-tuya.jpg
-      - /images/wallpaper/china/5-tuya.jpg
-      - /images/wallpaper/china/6-tuya.jpg
-      - /images/wallpaper/china/7-tuya.jpg
-      - /images/wallpaper/china/8-tuya.jpg
-      - /images/wallpaper/china/9-tuya.jpg
-      - /images/wallpaper/china/10-tuya.jpg
-      - /images/wallpaper/china/11-tuya.jpg
-      - /images/wallpaper/china/12-tuya.jpg
-      - /images/wallpaper/china/13-tuya.jpg
-      - /images/wallpaper/china/14-tuya.jpg
+      #- /images/wallpaper/china/1-tuya.jpg
+      #- /images/wallpaper/china/2-tuya.jpg
+      #- /images/wallpaper/china/3-tuya.jpg
+      #- /images/wallpaper/china/4-tuya.jpg
+      #- /images/wallpaper/china/5-tuya.jpg
+      #- /images/wallpaper/china/6-tuya.jpg
+      #- /images/wallpaper/china/7-tuya.jpg
+      #- /images/wallpaper/china/8-tuya.jpg
+      #- /images/wallpaper/china/9-tuya.jpg
+      #- /images/wallpaper/china/10-tuya.jpg
+      #- /images/wallpaper/china/11-tuya.jpg
+      #- /images/wallpaper/china/12-tuya.jpg
+      #- /images/wallpaper/china/13-tuya.jpg
+      #- /images/wallpaper/china/14-tuya.jpg
       
       #UNIVERSE
-      - /images/wallpaper/universe/1.jpg
-      - /images/wallpaper/universe/2.jpg
-      - /images/wallpaper/universe/3.jpg
-      - /images/wallpaper/universe/4.jpg
-      - /images/wallpaper/universe/5.jpg
-      - /images/wallpaper/universe/6.jpg
-      - /images/wallpaper/universe/7.jpg
-      - /images/wallpaper/universe/8.jpg
-      - /images/wallpaper/universe/9.jpg
-      - /images/wallpaper/universe/10.jpg
+      - https://i.loli.net/2021/02/21/TxoyRjlCb9dAIqL.jpg
+      #- https://i.loli.net/2021/02/21/8ZWwjLaGiyIQsAd.jpg
+      #- /images/wallpaper/universe/1.jpg
+      #- /images/wallpaper/universe/2.jpg
+      #- /images/wallpaper/universe/3.jpg
+      #- /images/wallpaper/universe/4.jpg
+      #- /images/wallpaper/universe/5.jpg
+      #- /images/wallpaper/universe/6.jpg
+      #- /images/wallpaper/universe/7.jpg
+      #- /images/wallpaper/universe/8.jpg
+      #- /images/wallpaper/universe/9.jpg
+      #- /images/wallpaper/universe/10.jpg
 
       #- https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg
       #- https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg
@@ -952,7 +954,7 @@ custom_css:
   navbar:
     height: 64px
     width: auto # auto, max
-    effect: [shadow, blur] # [shadow, floatable, blur]
+    effect: [shadow] # [shadow, floatable, blur]
   sidebar:
     effect: [shadow] # [shadow, floatable, blur]
   body:

@@ -243,3 +243,6 @@ import:
   link:
     - "<link rel='stylesheet' href='/css/iconfont.css'>"
     - "<link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/zhou251/CDN@1.1/hexo-volantis/img/可达鸭.ico'>"
+    -  <link type='text/css' rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" media='all'/>
+  script:
+    - <script src="http://at.alicdn.com/t/font_2378660_to62xmvf0i.js" type="text/javascript"></script>
