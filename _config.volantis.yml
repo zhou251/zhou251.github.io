@@ -53,7 +53,7 @@ navbar:
           icon: iconfont iconwendang
           url: documentation/
         - name: 资源合集
-          icon: iconfont iciconziyuanonfenlei
+          icon: iconfont iconziyuan
           url: resources/
     #- name: 友链
     #  icon: fas fa-link
