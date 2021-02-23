@@ -28,6 +28,9 @@ navbar:
     - name: 主页
       icon: iconfont iconHOMEMESSAGE
       url: /
+    - name: 碎碎念
+      icon: iconfont iconshuoshuo
+      url: bb/
     - name: 找文章
       icon: iconfont iconbox
       rows:
@@ -392,9 +395,27 @@ sidebar:
         - icon: #fas fa-envelope
           img: https://i.loli.net/2021/02/21/zyhlw4C7RQaco3D.png
           url: mailto:zhousl251@foxmail.com
+          #简书
+        - img: https://i.loli.net/2021/02/23/NIVPuG2QJZnyUKC.png
+          url: https://www.jianshu.com/u/47fe8decb9ae
+          #rss
         - icon: #fas fa-rss
           img: https://i.loli.net/2021/02/21/5i8qONoVCDPKRxl.png
           url: /atom.xml
+          #知乎
+        - img: https://i.loli.net/2021/02/23/dH2spV8XhBxfJom.png
+          url: https://www.zhihu.com/people/mi-hua-251
+          #微博
+        - img: https://i.loli.net/2021/02/23/WlHt8kxQ49UqA1c.png
+          url: https://weibo.com/u/5869903427/home?wvr=5
+          #bilibili
+        - img: https://i.loli.net/2021/02/23/mgnloaRbTVM6SAB.png
+          url: https://space.bilibili.com/15002234
+          #爱
+        - img: https://i.loli.net/2021/02/23/HjWSF1nOzJTmIgq.png
+          url: https://space.bilibili.com/15002234
+        
+        
         #- icon: fas fa-headphones-alt
         #  url: /
     # ---------------------------------------
@@ -686,7 +707,7 @@ plugins:
     type: playlist    # song, playlist, album, search, artist
     id: 7872981088    # song id / playlist id / album id / search keyword
     # Optional
-    fixed: false      # enable fixed mode
+    fixed: true      # enable fixed mode
     theme: '#1BCDFC'  # main color
     autoplay: false   # audio autoplay
     order: list       # player play order, values: 'list', 'random'
@@ -702,7 +723,7 @@ plugins:
     animation: false # false, nprogress, circle
     banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
       # - '/artitalk/'     # artitalk 不支持 pjax
-      # - '/bb/'           # bbtalk 不支持 pjax
+       - '/bb/'           # bbtalk 不支持 pjax
 
   # 从 issues 加载动态数据
   # {% issues sites/timeline/friends | api=xxx | group=key:a,b,c %}
@@ -755,9 +776,9 @@ plugins:
   # BBtalk https://bb.js.org
   bbtalk:
     js: https://cdn.jsdelivr.net/npm/bbtalk@0.1.5/dist/bbtalk.min.js # BBtalk.js
-    appId: 0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz # your appID
-    appKey: HwCiWuxfpvKiLm4teCUgTIba # your appKEY
-    serverURLs: https://bbapi.heson10.com # Request Api 域名
+    appId: v502BG3J2299Dl4bYH25GXJK-MdYXbMMI # your appID
+    appKey: QVlfs5duzqvos27nYU1Jylu6 # your appKEY
+    serverURLs: https://v502bg3j.api.lncldglobal.com # Request Api 域名
 
   # Tidio聊天功能
   # https://www.tidio.com/

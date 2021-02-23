@@ -1,15 +1,16 @@
 ---
 title: 
-date: 2021-02-22 14:25:46
+date: 2021-02-23 13:07:58
 author: zhou251
+layout: bb
 top_meta: false
 bottom_meta: false
 sidebar: []
+comments: false
 ---
 <div style="margin-top:2.5rem;text-align:center">
-<span class="milky">👀 资源合集</span>
+<span class="milky">🍑 碎碎念</span>
 </div>
-<br/>
 
 <style>
 .milky {
@@ -25,6 +26,5 @@ sidebar: []
 </style>
 
 {% noteblock quote %}
-🥝一个好用的{% span red, 图标 %}网站
-{% link 阿里巴巴矢量图标库, https://www.iconfont.cn/, https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico %}
+😶此说说通过📱手机微信发出，记录我的生活和思考。
 {% endnoteblock %}
