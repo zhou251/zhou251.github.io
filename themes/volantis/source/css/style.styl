@@ -1,0 +1,163 @@
+@import '_defines/*'
+
+// Project
+@import '_tag-plugins/*'
+@import '_highlight'
+@import '_plugins/index'
+@import '_layout/*'
+
+#safearea{
+  display: block
+}
+
+//全局布局美化代码
+body {
+    //background-image:url(https://i.loli.net/2021/02/21/8XnjADegvZp3ON2.jpg); //背景图片地址
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    //background-position: 30% 20%;
+    background-position: 30% 15%;
+    background-size: cover;
+    //cursor: url(https://cdn.jsdelivr.net/gh/zhou251/CDN@1.5/hexo-volantis/img/kedaya.cur),auto;
+    //background-color: @theme_background;
+    cursor: url(https://cdn.jsdelivr.net/gh/zhou251/CDN@1.6/hexo-volantis/img/default.cur),auto
+    background-color: @theme_background;
+    :link {
+        cursor: url(https://cdn.jsdelivr.net/gh/zhou251/CDN@1.6/hexo-volantis/img/pointer.cur),auto
+        background-color: @theme_background;
+        }
+    
+    
+}
+
+.l_side .toc-wrapper .toc-item.active>.toc-link {
+    color: #ff0000;
+    border-left: 2px solid #ff6666;
+}
+
+.l_side .toc-wrapper a {
+    padding-left: 8px;
+    color: #333333;
+    font-size: .875rem;
+    display: inline-block;
+}
+
+.widget header.pure {
+    background: linear-gradient(to right, #eea2a2 0, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.widget header, .widget header a {
+    color: #fff;
+}
+
+.widget.blogger {
+    transition: all .28s ease;
+    background-color: rgba(183,231,211,1)
+    -moz-transition: all .28s ease;
+    -webkit-transition: all .28s ease;
+    -o-transition: all .28s ease;
+}
+
+.github-badge {
+    margin-left: 5px;
+    display: inline-block;
+    border-radius: 6px;
+    text-shadow: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #333333;
+    margin-bottom: 5px;
+}
+
+.article-title {
+    font-weight: 500;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.md .poem-wrap h1:before {
+    height: 0;
+}
+
+.tk-comment {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    word-break: break-all;
+    padding: 15px 20px 0 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px dashed rgba(198,51,0,.3);
+    border-top-color: rgba(198,51,0,.3);
+    border-top-style: dashed;
+    border-top-width: 1px;
+    border-right-color: rgba(198,51,0,.3);
+    border-right-style: dashed;
+    border-right-width: 1px;
+    border-bottom-color: rgba(198,51,0,.3);
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-left-color: rgba(198,51,0,.3);
+    border-left-style: dashed;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    transition: all .3s;
+}
+
+/* 美化 hr 样式 */
+hr {
+    position: relative;
+    margin: 2rem auto;
+    width: calc(100% - 4px);
+    border: 2px dashed #a4d8fa;
+    background: #fff;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+hr:before {
+    position: absolute;
+    top: -10px;
+    left: 5%;
+    z-index: 1;
+    color: #49b1f5;
+    content: '\f0c4';
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+hr:hover::before{
+	left: 95%;
+}
+
+.widget.blogger .content .social-wrapper a.social {
+    width: 30px;
+    height: 23px;
+    margin: 5px 10px 5px 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
