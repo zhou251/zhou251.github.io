@@ -21,16 +21,13 @@ info:
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]  ##导航栏图标相关
-    img: /images/小可达鸭.jpg  
+    img: #/images/小可达鸭.jpg  
     icon: #/images/可达鸭.png
     title:
   menu:
     - name: 主页
       icon: iconfont iconHOMEMESSAGE
       url: /
-    - name: 碎碎念
-      icon: iconfont iconshuoshuo
-      url: bb/
     - name: 找文章
       icon: iconfont iconbox
       rows:
@@ -43,15 +40,36 @@ navbar:
         - name: 归档
           icon: iconfont iconguidang
           url: archives/
+    - name: 我们的爱
+      icon: iconfont iconlove 
+      rows:
+        - name: 恋爱天数
+          icon: iconfont iconlovecalendar
+          url: love/lovedate/
+        - name: 想对你说
+          icon: iconfont iconlove4
+          url: love/lovewords/
+        - name: loveshow
+          icon: iconfont iconlove5
+          url: love/loveppt/
+        - name: 我们的故事
+          icon: iconfont iconlove2
+          url: love/lovestory/
     - name: 相册
       icon: iconfont iconxiangce2
       url: photos/
+    - name: 碎碎念
+      icon: iconfont iconshuoshuo
+      url: bb/
     - name: 留言板
       icon: iconfont iconliuyanguanli
       url: guestbook/
-    - name: 百宝箱
+    - name: 更多
       icon: iconfont iconmore
       rows:
+        - name:  关于我
+          icon: iconfont iconguanyuwomen
+          url: about/
         - name: 文档中心
           icon: iconfont iconwendang
           url: documentation/
@@ -61,9 +79,6 @@ navbar:
     #- name: 友链
     #  icon: fas fa-link
     #  url: friends/
-    - name: 关于我
-      icon: iconfont iconguanyuwomen
-      url: about/
     - name: 关灯 # 可自定义
       icon: iconfont iconyejianmoshi # 可自定义
       toggle: darkmode
@@ -413,7 +428,7 @@ sidebar:
           url: https://space.bilibili.com/15002234
           #爱
         - img: https://i.loli.net/2021/02/23/HjWSF1nOzJTmIgq.png
-          url: https://zhou251.top/lovetest/index.html
+          url: love/
         
         
         #- icon: fas fa-headphones-alt

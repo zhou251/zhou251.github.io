@@ -38,6 +38,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render: 
+    - "love/**"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -113,8 +114,10 @@ theme: volantis
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy: 
   type: git
-  repo: git@github.com:zhou251/zhou251.github.io.git
-  branch: main
+  repo: 
+      github: git@github.com:zhou251/zhou251.github.io.git
+      coding: git@e.coding.net:zhou251/zhou251/zhou251.git
+  branch: master
   
 jsonContent:
   meta: true
