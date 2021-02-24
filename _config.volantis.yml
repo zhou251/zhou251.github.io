@@ -79,9 +79,9 @@ navbar:
     #- name: 友链
     #  icon: fas fa-link
     #  url: friends/
-    - name: 关灯 # 可自定义
-      icon: iconfont iconyejianmoshi # 可自定义
-      toggle: darkmode
+    #- name: 关灯 # 可自定义
+    #  icon: iconfont iconyejianmoshi # 可自定义
+    #  toggle: darkmode
   search: 搜索中...(oﾟvﾟo)ノ   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
 
@@ -411,7 +411,7 @@ sidebar:
           img: https://i.loli.net/2021/02/21/zyhlw4C7RQaco3D.png
           url: mailto:zhousl251@foxmail.com
           #简书
-        - img: https://i.loli.net/2021/02/23/NIVPuG2QJZnyUKC.png
+        - img: https://i.loli.net/2021/02/24/sMNlz9vbWpyF5O6.png
           url: https://www.jianshu.com/u/47fe8decb9ae
           #rss
         - icon: #fas fa-rss
@@ -722,7 +722,7 @@ plugins:
     type: playlist    # song, playlist, album, search, artist
     id: 7872981088    # song id / playlist id / album id / search keyword
     # Optional
-    fixed: true      # enable fixed mode
+    fixed: false      # enable fixed mode
     theme: '#1BCDFC'  # main color
     autoplay: false   # audio autoplay
     order: list       # player play order, values: 'list', 'random'
@@ -808,7 +808,7 @@ plugins:
 rightmenu:
   enable: true
   # hr: 分割线, music: 音乐控制器
-  layout: [home, photos, about, guestbook, hr, dark_mode, hr, music]
+  layout: [home, photos, about, guestbook, hr, music]
   # 可选功能项
   print:
     name: 打印页面
@@ -901,7 +901,7 @@ color_scheme:
     # 网站背景上的文字
     site_inner: '#fff'
     # 网站页脚文字
-    site_footer: '#ff0'
+    site_footer: '#ccf'
 
     # 卡片背景色
     card: '#fff'
