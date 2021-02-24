@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-author: 
+author: zhou251
 tags: 
 categories: 
 ---

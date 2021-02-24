@@ -22,3 +22,8 @@ sidebar: []
     background: linear-gradient(rgb(255, 102, 102) 0px, rgb(255, 102, 51) 100%);
 }
 </style>
+
+{% gallery stretch, 2 %}
+{% link volantis4.0, https://volantis.js.org/v4/getting-started/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png %}
+{% link amWiki, http://amwiki.org/doc/?file=home-%E9%A6%96%E9%A1%B5, http://amwiki.org/doc/amWiki/images/logo.png %}
+{% endgallery %}

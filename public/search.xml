@@ -8,14 +8,18 @@
       <link href="posts/14591/"/>
       <url>posts/14591/</url>
       
-        <content type="html"><![CDATA[<p>在接触了yilia，next和volantis之后，最终选择了volantis。<br>选择volantis有以下几点原因：  </p><ul><li><p>颜值高</p></li><li><p>易于上手</p></li><li><p>官方文档写的很详细<br/> </p><p>在个性化路上参考了几位大佬的博客，他们分别是：</p></li><li><p><a href="https://www.itrhx.com/">TRHX’S BLOG</a></p></li><li><p><a href="https://www.heson10.com/">黑石博客</a></p></li><li><p><a href="https://hasaik.com/">XU’S BLOG</a></p></li><li><p>[]</p><p>其中，黑石放出了自己魔改的volantis版本，而XU的评论区干货很多，一定要看。</p></li></ul><span id="more"></span><h2 id="待续"><a href="#待续" class="headerlink" title="待续"></a>待续</h2>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>在接触了yilia，next和volantis之后，最终选择了volantis。<br>选择volantis有以下几点原因：  </p><ul><li>颜值高</li><li>易于上手</li><li>官方文档写的很详细<br/> </li></ul></blockquote><p>个性化路上参考了几位大佬的博客，他们分别是：</p><ul><li><a href="https://www.itrhx.com/">TRHX’S BLOG</a></li><li><a href="https://enfangzhong.github.io/">AnFrank’s Blog</a></li><li><a href="https://hasaik.com/">XU’S BLOG</a></li><li><a href="https://www.heson10.com/">黑石博客</a></li><li><a href="https://www.zyoushuo.cn/">阳光派PLUS</a></li><li><a href="https://www.voidking.com/">好好学习的郝</a></li><li><a href="https://yansheng836.github.io/">荷塘月色</a></li></ul><p>其中，黑石放出了自己魔改的volantis版本，而XU的评论区干货很多，一定要看。</p><span id="more"></span><div class="note info red"><p><strong>建议</strong></p><ul><li><strong>务必详细</strong>阅读整个<a href="https://volantis.js.org/v4/getting-started/">Volantis官方文档</a>。</li><li>博客更应该<strong>注重内容</strong>，样式只要看着不别扭就行，没必要整的花里胡哨的</li></ul></div><p>具体安装，部署之类的我就不说了。网上随便找找都有（小声bb，虽然csdn上有很多质量博文，但是更多的博文简直不能看，全是copy-ninja）<br>我也不知道从哪里写，索性就按volantis的模块一个个说吧。</p><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><h3 id="live2d位置摆放"><a href="#live2d位置摆放" class="headerlink" title="live2d位置摆放"></a>live2d位置摆放</h3><h3 id="aplayer固定位置"><a href="#aplayer固定位置" class="headerlink" title="aplayer固定位置"></a>aplayer固定位置</h3><h3 id="右侧小侧边栏（取消右侧back2top"><a href="#右侧小侧边栏（取消右侧back2top" class="headerlink" title="右侧小侧边栏（取消右侧back2top)"></a>右侧小侧边栏（取消右侧back2top)</h3><h3 id="开启Tidio"><a href="#开启Tidio" class="headerlink" title="开启Tidio"></a>开启Tidio</h3><h3 id="标题制作"><a href="#标题制作" class="headerlink" title="标题制作"></a>标题制作</h3><h3 id="图标来源"><a href="#图标来源" class="headerlink" title="图标来源"></a>图标来源</h3>]]></content>
       
       
       <categories>
           
           <category> 教程 </category>
           
-          <category> 博客 </category>
+          <category> VOLANTIS </category>
+          
+          <category> HEXO </category>
+          
+          <category> VOLANTIS </category>
           
       </categories>
       
@@ -46,6 +50,8 @@
           
           <category> 教程 </category>
           
+          <category> MARKDOWN </category>
+          
       </categories>
       
       
@@ -53,7 +59,7 @@
             
             <tag> MARKDOWN </tag>
             
-            <tag> 写作 </tag>
+            <tag> 个人总结 </tag>
             
         </tags>
       
@@ -71,14 +77,14 @@
       
       <categories>
           
-          <category> 教程 </category>
+          <category> 博文写作 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 写作 </tag>
+            <tag> 个人总结 </tag>
             
             <tag> BLOG </tag>
             

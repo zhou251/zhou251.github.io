@@ -3,6 +3,7 @@
   <%- partial('_partial/head') %>
   <body>
     <%- partial('_partial/header', null, {cache: false, path: path}) %>
+
     <div id="l_body">
       <%- partial('_partial/cover') %>
       <div id="safearea">
@@ -13,10 +14,10 @@
 		  <% } %>
 		  <%- partial('_third-party/pjax/pdata') %>
         </div>
-        <!--右侧回到顶部按钮
+        
         <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-        <a id="s-top" class="fas fa-arrow-up fa-fw" href="javascript:void(0)"></a>
-        -->
+       <!-- <a id="s-top" class="fas fa-arrow-up fa-fw" href="javascript:void(0)"></a> -->
+        
       </div>
     </div>
     <div>

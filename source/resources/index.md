@@ -24,7 +24,14 @@ sidebar: []
 }
 </style>
 
-{% noteblock quote %}
-🥝一个好用的{% span red, 图标 %}网站
-{% link 阿里巴巴矢量图标库, https://www.iconfont.cn/, https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico %}
+{% noteblock , 图标库 %}
+{% gallery stretch, 2 %}
+{% link 阿里巴巴矢量图标库, https://www.iconfont.cn/, https://i.loli.net/2021/02/24/SkI7YQvBtGe6LUC.png %}
+{% link flaticon图标库, https://www.flaticon.com/, https://i.loli.net/2021/02/24/AchBO8i5kpF6m24.png %}
+{% endgallery %}
+{% gallery stretch, 2 %}
+{% link Font Awesome, https://fontawesome.dashgame.com/, https://i.loli.net/2021/02/24/AchBO8i5kpF6m24.png %}
+{% link easyicon, https://www.easyicon.net/, https://i.loli.net/2021/02/24/OGhlnqxNJsX4pV7.png %}
+{% endgallery %}
+{% span red h2, 立即推阿里巴巴图标库 %}
 {% endnoteblock %}

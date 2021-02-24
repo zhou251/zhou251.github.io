@@ -32,7 +32,7 @@ navbar:
       icon: iconfont iconbox
       rows:
         - name: 标签
-          icon: iconfont iconbianpinghuatubiaosheji-
+          icon: iconfont iconbiaoqian
           url: tags/
         - name: 分类
           icon: iconfont iconfenlei
@@ -43,18 +43,18 @@ navbar:
     - name: 我们的爱
       icon: iconfont iconlove 
       rows:
-        - name: 恋爱天数
+        - name: 恋爱ING
           icon: iconfont iconlovecalendar
-          url: love/lovedate/
+          url: #love/lovedate/
         - name: 想对你说
           icon: iconfont iconlove4
-          url: love/lovewords/
+          #url: love/lovewords/
         - name: loveshow
           icon: iconfont iconlove5
-          url: love/loveppt/
+          #url: love/loveppt/
         - name: 我们的故事
           icon: iconfont iconlove2
-          url: love/lovestory/
+          #url: love/lovestory/
     - name: 相册
       icon: iconfont iconxiangce2
       url: photos/
@@ -64,18 +64,19 @@ navbar:
     - name: 留言板
       icon: iconfont iconliuyanguanli
       url: guestbook/
-    - name: 更多
+    - name: 关于我
+      icon: iconfont iconguanyuwomen
+      url: about/
+    - name: 百宝箱
       icon: iconfont iconmore
       rows:
-        - name:  关于我
-          icon: iconfont iconguanyuwomen
-          url: about/
         - name: 文档中心
           icon: iconfont iconwendang
           url: documentation/
         - name: 资源合集
           icon: iconfont iconziyuan
           url: resources/
+    
     #- name: 友链
     #  icon: fas fa-link
     #  url: friends/
@@ -263,7 +264,7 @@ article:
         icon_duration: iconfont iconshalou
       # 文章标签
       tags:
-        icon: iconfont iconbianpinghuatubiaosheji-
+        icon: iconfont iconbiaoqian
       # 分享
       share:
         - id: qq
@@ -410,9 +411,9 @@ sidebar:
         - icon: #fas fa-envelope
           img: https://i.loli.net/2021/02/21/zyhlw4C7RQaco3D.png
           url: mailto:zhousl251@foxmail.com
-          #简书
-        - img: https://i.loli.net/2021/02/24/sMNlz9vbWpyF5O6.png
-          url: https://www.jianshu.com/u/47fe8decb9ae
+          #CSDN
+        - img: https://i.loli.net/2021/02/24/OwafYiSRP8NJ6LD.png
+          url: https://blog.csdn.net/qq_39311950?spm=1000.2115.3001.5343
           #rss
         - icon: #fas fa-rss
           img: https://i.loli.net/2021/02/21/5i8qONoVCDPKRxl.png
@@ -426,10 +427,9 @@ sidebar:
           #bilibili
         - img: https://i.loli.net/2021/02/23/mgnloaRbTVM6SAB.png
           url: https://space.bilibili.com/15002234
-          #爱
-        - img: https://i.loli.net/2021/02/23/HjWSF1nOzJTmIgq.png
-          url: love/
-        
+          #简书
+        - img: https://i.loli.net/2021/02/24/sMNlz9vbWpyF5O6.png
+          url: https://www.jianshu.com/u/47fe8decb9ae
         
         #- icon: fas fa-headphones-alt
         #  url: /
@@ -487,10 +487,11 @@ sidebar:
     donate:
       class: qrcode
       display: [desktop, mobile] # [desktop, mobile]
-      height: 64px  # Automatic height if not set
+      height:   # Automatic height if not set
       images:
         - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
         - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+      
     # ---------------------------------------
     
     
@@ -722,13 +723,13 @@ plugins:
     type: playlist    # song, playlist, album, search, artist
     id: 7872981088    # song id / playlist id / album id / search keyword
     # Optional
-    fixed: false      # enable fixed mode
+    fixed: true      # enable fixed mode
     theme: '#1BCDFC'  # main color
     autoplay: false   # audio autoplay
     order: list       # player play order, values: 'list', 'random'
     loop: all         # player loop play, values: 'all', 'one', 'none'
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
-    list_max_height: 500px # list max height
+    list_max_height: 460px # list max height
     list_folded: false
   pjax:
     enable: true
@@ -774,8 +775,8 @@ plugins:
   artitalk:
     # Set `layout: artitalk` to enable in page
     # 配置项按照yml格式继续填写即可
-    appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
-    appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
+    appId: #ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
+    appKey: #nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
     # serverURL:  #leancloud绑定的安全域名，使用国际版的话不需要填写
     # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
     # pageSize: #每页说说的显示数量
@@ -989,7 +990,7 @@ custom_css:
     border: 2px
   navbar:
     height: 64px
-    width: auto # auto, max
+    width: max # auto, max
     effect: [shadow] # [shadow, floatable, blur]
   sidebar:
     effect: [shadow] # [shadow, floatable, blur]

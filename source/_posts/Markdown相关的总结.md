@@ -3,9 +3,9 @@ title: markdown相关的总结
 author: zhou251
 tags:
   - MARKDOWN
-  - 写作
+  - 个人总结
 categories:
-  - 教程
+  - [教程,MARKDOWN]
 abbrlink: 25796
 date: 2021-02-17 11:29:55
 headimg: https://i.loli.net/2021/02/16/ODbMCALEm7uy5i2.png
