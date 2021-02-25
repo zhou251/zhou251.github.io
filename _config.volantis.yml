@@ -40,7 +40,7 @@ navbar:
         - name: 归档
           icon: iconfont iconguidang
           url: archives/
-    - name: 我们的爱
+    - name: 装修中 #我们的爱
       icon: iconfont iconlove 
       rows:
         - name: 恋爱ING
