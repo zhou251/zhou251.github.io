@@ -6,7 +6,7 @@
   <link href="https://zhou251.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhou251.github.io/"/>
-  <updated>2021-02-25T09:49:22.106Z</updated>
+  <updated>2021-02-25T14:53:28.611Z</updated>
   <id>https://zhou251.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>右侧小侧边栏的个性化</title>
+    <link href="https://zhou251.github.io/posts/58643/"/>
+    <id>https://zhou251.github.io/posts/58643/</id>
+    <published>2021-02-25T14:48:22.000Z</published>
+    <updated>2021-02-25T14:53:28.611Z</updated>
+    
+    
+    
+    
+    <category term="教程" scheme="https://zhou251.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="VOLANTIS" scheme="https://zhou251.github.io/categories/%E6%95%99%E7%A8%8B/VOLANTIS/"/>
+    
+    <category term="HEXO" scheme="https://zhou251.github.io/categories/HEXO/"/>
+    
+    <category term="VOLANTIS" scheme="https://zhou251.github.io/categories/HEXO/VOLANTIS/"/>
+    
+    
+    <category term="BLOG" scheme="https://zhou251.github.io/tags/BLOG/"/>
+    
+    <category term="HEXO" scheme="https://zhou251.github.io/tags/HEXO/"/>
+    
+    <category term="VOLANTIS" scheme="https://zhou251.github.io/tags/VOLANTIS/"/>
+    
+    <category term="个性化" scheme="https://zhou251.github.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>volantis主题个性化记录</title>
