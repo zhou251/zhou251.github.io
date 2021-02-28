@@ -64,6 +64,18 @@ navbar:
     - name: 留言板
       icon: iconfont iconliuyanguanli
       url: guestbook/
+    - name: 阅读
+      icon: iconfont icondushu
+      rows:
+        - name: 书单
+          icon: iconfont iconbook
+          url: booklist/
+        - name: 诗与歌
+          icon: iconfont iconsgdq
+          url: poetry
+        - name: 读书笔记
+          icon: iconfont icon44
+          url: booknotes/
     - name: 关于我
       icon: iconfont iconguanyuwomen
       url: about/
@@ -73,10 +85,12 @@ navbar:
         - name: 文档中心
           icon: iconfont iconwendang
           url: documentation/
-        - name: 资源合集
+        - name: 网址导航
           icon: iconfont iconziyuan
-          url: resources/
-    
+          url: webstack/
+        - name: 游戏中心
+          icon: iconfont iconyouxi
+          url: game/    
     #- name: 友链
     #  icon: fas fa-link
     #  url: friends/
@@ -407,7 +421,7 @@ sidebar:
       social:
         - icon: #fab fa-github
           img: https://i.loli.net/2021/02/21/UqhfOWtLguQ3bGd.png
-          url: https://github.com/zhou251social
+          url: https://github.com/zhou251
         - icon: #fas fa-envelope
           img: https://i.loli.net/2021/02/21/zyhlw4C7RQaco3D.png
           url: mailto:zhousl251@foxmail.com
@@ -544,7 +558,7 @@ tag_plugins:
     iconfont: 'Font Awesome 5 Free'
   # {% checkbox %}
   checkbox:
-    interactive: false # enable interactive for user
+    interactive: true # enable interactive for user
     color: '' # color for default checkbox
   # {% link title, url, img %}
   link:
@@ -918,9 +932,9 @@ color_scheme:
 
     # 文章部分
     h1: '#3a3a3a'
-    h2: '#3a3a3a'
-    h3: '#333'
-    h4: '#444'
+    h2: '#990000'
+    h3: '#FF4500'
+    h4: '#3300FF'
     h5: '#555'
     h6: '#666'
     p: '#444'
@@ -975,10 +989,10 @@ color_scheme:
 custom_css:
   toc_smooth: true # TOC 目录平滑滚动效果
   cursor:
-    enable: #true
+    enable: true
     text: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png
-    pointer: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png
-    default: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png
+    pointer: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png  #https://cdn.jsdelivr.net/gh/zhou251/CDN@1.6/hexo-volantis/img/pointer.cur  
+    default: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png  #https://cdn.jsdelivr.net/gh/zhou251/CDN@1.6/hexo-volantis/img/default.cur #
     not-allowed: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/circle.png
     zoom-out: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-out.png
     zoom-in: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-in.png
@@ -1055,8 +1069,8 @@ custom_css:
 analytics:
   busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud: # 请使用自己的 id & key 以防止数据丢失
-    app_id: u9j57bwJod4EDmXWdxrwuqQT-MdYXbMMI
-    app_key: jfHtEKVE24j0IVCGHbvuFClp
+    app_id: #u9j57bwJod4EDmXWdxrwuqQT-MdYXbMMI
+    app_key: #jfHtEKVE24j0IVCGHbvuFClp
     custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
 ############################### Analytics ############################### > end
 

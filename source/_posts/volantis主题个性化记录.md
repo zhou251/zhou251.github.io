@@ -16,12 +16,13 @@ date: 2021-02-22 17:38:01
 >选择volantis有以下几点原因：  
 >- 颜值高
 >- 易于上手
->- 官方文档写的很详细<br/> 
+>- [Volantis官方文档](https://volantis.js.org/v4/getting-started/)写的很详细<br/> 
   
 个性化路上参考了几位大佬的博客，他们分别是：
 - [TRHX'S BLOG](https://www.itrhx.com/)
 - [AnFrank's Blog](https://enfangzhong.github.io/)
 - [XU'S BLOG](https://hasaik.com/)
+- [Sanarous's Blog](https://bestzuo.cn/)
 - [黑石博客](https://www.heson10.com/)
 - [阳光派PLUS](https://www.zyoushuo.cn/)
 - [好好学习的郝](https://www.voidking.com/)
@@ -46,9 +47,9 @@ date: 2021-02-22 17:38:01
 
 ![volantis首页](https://i.loli.net/2021/02/25/1LtqMeQK6OFmUB5.png)
 ### 1.1 live2d位置摆放
-live2d安装请自行百度[hexo live2d](https://www.baidu.com/s?ie=UTF-8&wd=hexo%2)。  
-原来我的live2d放在右下，又因为右侧侧边栏跟左侧aplayer固定所以调整了一下位置。
-代码修改位置，**站点配置文件**_config.yml中：
+`live2d`安装请自行百度[hexo live2d](https://www.baidu.com/s?ie=UTF-8&wd=hexo%2)。  
+原来我的`live2d`放在右下，又因为右侧侧边栏跟左侧`aplayer`固定所以调整了一下位置。
+代码修改位置，**站点配置文件**`_config.yml`中：
 ```yml
 live2d:
   enable: true
@@ -67,8 +68,8 @@ live2d:
     show: false #是否在手机端显示
 ```
 ### 1.2 aplayer固定位置
-aplayer有放下页脚的也有放左侧的。我倾向于放左侧，这样可以直接看到，想听自己开。  
-代码修改位置，**主题配置文件**_config.volantis.yml中：
+`aplayer`有放下页脚的也有放左侧的。我倾向于放左侧，这样可以直接看到，想听自己开。  
+代码修改位置，**主题配置文件**`_config.volantis.yml`中：
 ```yml
 aplayer:
     enable: true #请开启
@@ -89,24 +90,28 @@ aplayer:
     list_max_height: 460px # list max height。歌单列表拉出来的高度。
     list_folded: false
 ```
-歌单id查询步骤如下（以QQ音乐为例）：  
+- 歌单id查询步骤如下（以QQ音乐为例）：  
+
 ![](https://i.loli.net/2021/02/25/WI3lZCB8hAXicpy.png) 
 ![](https://i.loli.net/2021/02/25/Ti82LWf7F6HSrn4.png)
 {% span red, 请注意，你的歌应该选取免费歌曲！%}  
 
 ### 1.3 右侧小侧边栏（取消右侧back2top)  
 #### 1.3.1 取消自带的右侧back2top:
-代码位置，\themes\volantis\layout\layout.ejs中：
+代码位置，`\themes\volantis\layout\layout.ejs`中：
 ```ejs
 <a id="s-top" class="fas fa-arrow-up fa-fw" href="javascript:void(0)"></a>
 修改为：
 <!-- <a id="s-top" class="fas fa-arrow-up fa-fw" href="javascript:void(0)"></a> -->
 ```
 #### 1.3.2 添加右侧小侧边栏:
-**参考文章：**[cungudafa的博文](https://blog.csdn.net/cungudafa/article/details/106500877)
-- 新建一个left.ejs。
+- **参考博文：**
+  1. [cungudafa的博文](https://blog.csdn.net/cungudafa/article/details/106500877)
+  2. [hexo之Volantis添加暗黑模式](https://www.zyoushuo.cn/post/e8f5.html)
+
+- 新建一个`left.ejs`。
 以下是我使用的代码：
-代码位置，themes/volantis/layout/_partial文件夹中新建left.ejs文件：
+代码位置，`themes/volantis/layout/_partial`文件夹中新建`left.ejs`文件：
 {% folding green, left.ejs %}
 ```
 <div id="RightDownBtn">
@@ -442,14 +447,14 @@ aplayer:
 <!-- left side bar.end -->
 ```
 {% endfolding %}  
-- 在layout.ejs中引用。
-代码位置，在themes\volantis\layout\layout.ejs中引用left.ejs:
+- 在`layout.ejs`中引用。
+代码位置，在`themes\volantis\layout\layout.ejs`中引用`left.ejs`:
 ```ejs
 <!--注意在body之前添加代码-->
 <%- partial('_partial/left', null, {cache: !config.relative_link}) %>  
 ```
-- 额外的，图标的更换以及添加新的页面跳转，可以看我的博文[右边小侧边栏更换图标](www.baidu.com).  
-- 修改右边小侧边栏的显示位置方法如下。在我们添加的left.ejs的代码中，找到以下代码修改  
+- 额外的，图标的更换以及添加新的页面跳转，可以看我的博文[右边小侧边栏更换图标](https://zhou251.github.io/posts/58643/).  
+- 修改右边小侧边栏的显示位置方法如下。在我们添加的`left.ejs`的代码中，找到以下代码修改  
   ```ejs
     #RightDownBtn {
         position: fixed;
@@ -467,16 +472,16 @@ aplayer:
         float: right;
     }
     ```
-如上所示，right:10rem就是离右边的距离，想显示在左边就把right换成left。bottom: 23.5rem，就是离底部的距离。我之所放在这里，我是因为不想被Tidio的聊天框挡住。
+如上所示，`right:10rem`就是离右边的距离，想显示在左边就把`right`换成`left`。`bottom: 23.5rem`，就是离底部的距离。我之所放在这里，我是因为不想被Tidio的聊天框挡住。
 ### 1.4 开启Tidio
 效果如图：  
 ![tidio](https://i.loli.net/2021/02/25/KlTWU5jo3ILFkCA.png)
 #### 1.4.1 注册tidio
 可以去官网[tidio](https://www.tidio.com/)注册。
 #### 1.4.2 配置主题文件
-如图在设置中复制Public Key。  
+如图在设置中复制`Public Key`。  
 ![key](https://i.loli.net/2021/02/25/hz1BiXa5bGZSdup.png)
-将key粘贴到`_config.volantis.yml`中的相关代码中的id处即可。
+将`key`粘贴到`_config.volantis.yml`中的相关代码中的`id`处即可。
   ```yml
   # Tidio聊天功能
   # https://www.tidio.com/
@@ -504,7 +509,7 @@ aplayer:
 - 使用方法请看这里[Hexo-使用阿里iconfont图标](https://blog.csdn.net/qq_43740362/article/details/113796473)。
 但是首页的图标我并没有使用icon而是选用的img，方法如下。
 - 选择想使用的图标，点击下载png格式。
-- 以首页图标为例，进入**主题配置文件**-config.volantis.yml中定位到以下代码处。
+- 以首页图标为例，进入**主题配置文件**`_config.volantis.yml`中定位到以下代码处。
   ```yml
   features:
     - name: 首页
@@ -520,39 +525,556 @@ aplayer:
 ![](https://i.loli.net/2021/02/25/xaR2phbgl4Vn7CE.png)  
 ![](https://i.loli.net/2021/02/25/i82QsZfzktpDdqO.png)
 就是一个装饰用的，实现方法如下：
-- 在themes\volantis\source\js下新建一个js文件，crash_cheat.js。代码如下：  
+- 在`themes\volantis\source\js`下新建一个js文件，`crash_cheat.js`。代码如下：  
   ```js
-    $(function () {
-      var OriginTitle = document.title;
-      var titleTime;
-      document.addEventListener('visibilitychange', function () {
+  $(function () {
+        var OriginTitle = document.title;
+        var titleTime;
+        document.addEventListener('visibilitychange', function () {
         // 解决pjax冲突bug
-        if (document.title !== '╰（‵□′）╯ 我是！') {
+         if (document.title !== '╰（‵□′）╯ 我是！') {
             OriginTitle = document.title
-        }
-        if (document.hidden) {
+         }
+         if (document.hidden) {
             $('[rel="icon"]').attr('href', "https://i.loli.net/2021/02/22/Ej89S5cqwQzhT6V.png");
             $('[rel="shortcut icon"]').attr('href', "https://i.loli.net/2021/02/22/Ej89S5cqwQzhT6V.png");
             document.title = '╰（‵□′）╯ 我是！';
             clearTimeout(titleTime);
-        } else {
+         } else {
             $('[rel="icon"]').attr('href', "https://i.loli.net/2021/02/22/aZhi1wStPpoYFm6.png");
             $('[rel="shortcut icon"]').attr('href', "https://i.loli.net/2021/02/22/aZhi1wStPpoYFm6.png");
             document.title = '(╯‵□′)╯︵┻━┻ 火车王！ ';
             titleTime = setTimeout(function () {
                 document.title = OriginTitle;
             }, 2000);
-        }
-      });
-   })  
-  ```  
-
+          }
+        });
+     })  
+  ```
 - 引用js。  
-在\themes\volantis\layout\_partial\scripts文件夹中的index.ejs中的最后一行添加以下代码。
+在`\themes\volantis\layout\_partial\scripts`文件夹中的`index.ejs`中的最后一行添加以下代码。
    ```ejs
    <script src="/js/crash_cheat.js"></script>
-   ```  
-- 你可以按照喜好，自定义上述代码中的title和href部分。  
+   ```
+
+- 你可以按照喜好，自定义上述代码中的`title`和`href`部分。  
+
 ## 2 内容页  
 效果如图：  
+
 ![内容页](https://i.loli.net/2021/02/25/wH9RXsyitfoJrDk.png)
+### 2.1 导航栏
+#### 导航栏模式选择
+默认应该是居中模式，但是并不是全屏宽度的。
+所以我改了**主题配置文件**`_config.volantis.yml`中的相关设置，请定位到以下代码进行修改。
+```yml
+navbar:
+    height: 64px
+    width: max # auto, max
+    effect: [shadow] # [shadow, floatable, blur]
+```
+修改`width`中的设定，设置为`max`最大。
+
+#### 2.1.1导航栏背景渐变色
+- 取消毛玻璃特效
+  代码位置，**主题配置文件**`_config.volantis.yml`中，请定位到以下代码：
+  ```yml
+  navbar:
+    height: 64px
+    width: max # auto, max
+    effect: [shadow] # [shadow, floatable, blur]
+  ```
+  将`effect`中的`blur`去掉，这里我已经去掉了。
+- 添加渐变色样式
+  代码位置，`/themes/volantis/source/css/_first`文件夹中，修改`navbar.styl`文件。请定位到以下代码：
+  ```styl
+  .l_header
+  $iconW = 36px
+  $iconMargin = 4px
+  position: fixed
+  z-index: 1000
+  top: 0
+  width: 100%
+  height: $navbar-height
+  background: var(--color-card)
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+  box-shadow: $boxshadow-card
+  ```
+- 这里你们是没有`backgroud-image:`请自行添加，后面的颜色代码和渐变位置你们也可以自定义。
+  这里有一个[渐变css3样式](http://color.oulu.me/)网站。  
+
+#### 2.1.2导航栏新建栏目
+1. 新建一个相册栏目。
+  这里只是做个初步的新建，实际页面样式请看后文相关页面的具体配置。
+  - 在Git Bash中,新建一个页面
+    ```
+    hexo n page photos
+    ```
+  - 显示新建页面
+    代码位置，主题配置位置`_config.volantis.yml`中，请定位到以下代码，
+    ```yml
+     navbar:
+      visiable: auto # always, auto
+      logo: # choose [img] or [icon + title]  ##导航栏图标相关
+      img: #/images/小可达鸭.jpg  
+      icon: #/images/可达鸭.png
+      title:
+     menu:
+      - name: 主页
+        icon: iconfont iconHOMEMESSAGE
+        url: /
+    ```
+    在`menu`中仿照主页，添加相册栏目，icon添加我使用的[阿里图标库](https://www.iconfont.cn/)的图标，上文有介绍。
+    `url`中填你新建栏目`index.md`所在的文件夹，这里新建页面photos，所以填的是`photos/`
+    如下所示：
+    ```yml
+     - name: 相册
+       icon: iconfont iconxiangce2
+       url: photos/
+    ```
+    栏目的顺序，即是menu中上下的排序。
+2. 新建一个类似`找文章`一样的列表栏目。
+  - 首先像上面新建相册一样，新建你需要的页面。
+  - 然后将页面放进列表中，利用`rows`语法如下：
+    ```yml
+    - name: 阅读
+      icon: iconfont icondushu
+      rows:
+        - name: 书单
+          icon: iconfont iconbook
+          url: booklist/
+        - name: 诗与歌
+          icon: iconfont iconsgdq
+          url: poetry/
+        - name: 读书笔记
+          icon: iconfont icon44
+          url: booknotes/
+    ```
+    这里以我的阅读栏目为例，下面有三个独立页面。
+
+### 2.2 侧边栏
+#### 2.2.1 侧边栏标题背景渐变色
+像导航栏一样，代码位置，`themes\volantis\source\css`文件夹中的`style.styl`添加代码(这里引用css应该更好):
+```styl
+.widget header.pure {
+    background: linear-gradient(to right, #eea2a2 0, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+```
+`background`即为背景色，具体渐变色可以自己调整。另外，设置了文字`color`的颜色为`#fff`白色，你可以自行调整。  
+下面内容白色背景也是可以自定义的，请自行`f12`定位样式修改，不过我改过觉得还是白色好，可以换个柔和一点的白色。  
+
+#### 2.2.2 新建公告板
+新建公告板的话，[官方文档-通用文本部件](https://volantis.js.org/v3/theme-settings/widget/)里有详细介绍。
+然后在**主题配置文件**`_config.volantis.yml`里,定位到以下代码，开启。
+```yml
+ sidebar:
+  # 主页、分类、归档等独立页面
+  for_page: [repos, blogger, tagcloud, category, qrcode, recentpost, webinfo]
+```
+这里，因为我想把公告放在显眼的位置。于是把它放在了第一个，有别的需求的自行调整位置。  
+
+#### 2.2.3 彩色打印机
+这个就是头像下面那个`四季是我一生的诗`的彩色字符。
+实现方法如下：
+- 代码位置，`\themes\volantis\source\js`文件夹中新建js文件，`typewriter-color.js`。
+  {% folding green, typewriter-color.js %}
+  ```
+  var typewriterColor = function (r) {
+    function t() {
+        return b[Math.floor(Math.random() * b.length)]
+    }
+
+    function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+    }
+
+    function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+            var l = document.createElement("span");
+            l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+    }
+
+    function i() {
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+    }
+    /*以下内容自定义修改*/
+    var l = "",
+        o = ["四季是我一生的诗~", ].map(function (r) {
+            return r + ""
+        }), a = 2, g = 1, s = 5, d = 75,
+        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+        c = {text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g};
+    i()
+ };
+ typewriterColor(document.getElementById('binft'));
+  ```
+  {% endfolding %} 
+  这里签名内容请自行调整。
+- 调用js。
+  代码位置，themes\volantis\layout\_widget文件夹中，修改blogger.ejs，在`<% if (item.social == true && theme.footer.social) { %>`前插入代码。
+  ```ejs
+  <!--彩色打字机效果-->
+  <div id="binft" align="center"></div>
+  <script src="/js/typewriter-color.js"></script>
+  ```
+
+#### 2.4.4 社交图标选取
+社交图标我使用的是这一套[social图标](https://www.flaticon.com/packs/social-media-73)以及[阿里巴巴矢量图标库](https://www.iconfont.cn/)里面的图标。
+下载png格式，在**主题配置文件**`_config.volantis.yml`中定位到社交按钮处。
+```yml
+social:
+        - icon: #fab fa-github
+          img: #图标链接填这里，请使用图床生成直链。
+          url: #网站直链
+```
+
+## 3 导航栏中分栏目页面样式
+这里选取几个典型的，恋爱纪念，相册，碎碎念，留言板，关于我，彩色标签云。
+### 3.1 恋爱纪念
+请在`博客根目录blog\source`下建一个文件夹，方便点就叫`love`。
+之后会有四个文件夹放到这个`love`文件夹下，`url`设置一下就行了。
+**参考博文**：[我们的爱情](http://www.bigeone.cn/love/index.html)
+#### 3.1.1 恋爱天数
+- 演示地址：[LOVEYUE6](http://loveyue6.bigeone.cn/)
+- 源代码地址：[第六个](https://github.com/wuxia2001/loveyue)
+- 在`love`文件夹下新建一个文件夹，我这里就新建为`lovedate`。将`第六个`的源代码复制进去。
+- 在**主题配置文件**`_config.volantis.yml`中，定位到`menu:`位置，添加以下代码。
+  ```
+  - name: 我们的爱
+    icon: iconfont iconlove 
+    rows:
+        - name: 恋爱ING
+          icon: iconfont iconlovecalendar
+          url: love/lovedate/
+        - name: 想对你说
+          icon: iconfont iconlove4
+          url: love/lovewords/
+        - name: loveshow
+          icon: iconfont iconlove5
+          url: love/loveppt/
+        - name: 我们的故事
+          icon: iconfont iconlove2
+          url: love/lovestory/
+  ```
+   {% span red , 注意！我这里是四个页面，我全放这里了。用rows将四个页面放在我们的爱下面。url指向的是我们源代码存放的文件夹中。%} <br/> 
+   {% span red , 注意！页面文字信息请自行按照README.txt指示，在html文件中修改。%}  
+
+#### 3.1.2 恋爱表白
+- 演示地址：[LOVEYUE1](http://loveyue1.bigeone.cn/)
+- 源代码下载地址：[第一个](https://github.com/wuxia2001/loveyue)
+- 在`love`文件夹下新建一个文件夹，我这里就新建为`lovewords`。将`第一个`的源代码复制进去。
+- 如上**3.1.1 恋爱天数**所示，在**主题配置文件**`_config.volantis.yml`中，定位到`menu:`位置，添加代码。  
+
+#### 3.1.3 恋爱ppt
+- 演示地址：[love-ppt](https://arunboy.github.io/love/)
+- 源代码下载地址：[love-ppt](https://github.com/arunboy/love)
+- 在`love`文件夹下新建一个文件夹，我这里就新建为`loveppt`。将`love-ppt`的源代码复制进去。
+- 如上**3.1.1 恋爱天数**所示，在**主题配置文件**`_config.volantis.yml`中，定位到`menu:`位置，添加代码。  
+
+#### 3.1.4 恋爱历程
+- 演示地址：[lovestory](http://www.bigeone.cn/story/one/index_pc.html)
+- 源代码下载地址：[lovestory](https://github.com/zhou251/zhou251.github.io/tree/master/love/lovestory)
+- 在`love`文件夹下新建一个文件夹，我这里就新建为`lovestory`。将`lovestory`的源代码复制进去。
+- 如上**3.1.1 恋爱天数**所示，在**主题配置文件**`_config.volantis.yml`中，定位到`menu:`位置，添加代码。    
+
+### 3.2 相册
+效果如图：  
+
+![相册示例](https://i.loli.net/2021/02/26/qDYJvbXl7zeiE4V.png)
+volantis的`tab`实在是太好用了。
+yilia中添加相册比`tab`复杂了很多。
+这里[Volantis官方文档](https://volantis.js.org/v3/tag-plugins/container/)写的很详细。
+以相册为例，简单讲下。
+- 首先我们进入相册的`index.md`中，这个位置应该不用我说吧，在你建的photos文件夹下。
+- 然后我们按照`tab`语法写一个`tabs`,`tabs`里面可以放很多`tab`，一个`tab`就是一个box你可以在里面写字传照片。
+- 你可指定照片的显示方式,官方有说，看这里[image标签与gallery标签](https://volantis.js.org/v3/tag-plugins/media/)
+- 一个页面可以放很多tabs，**注意tabs的id不要重复**。  
+
+### 3.3 碎碎念
+这里直接移步大佬的博客即可，[哔哔！换个姿势在静态博客上发短博文（Hexo-Volantis适配）](https://www.heson10.com/volantis/posts/15701.html)  
+
+### 3.4 留言板
+`留言板`跟`关于我`的内容全部取自[XU'S BLOG](https://hasaik.com/)。
+因为原内容在评论区，因此我这里做一个总结。
+- 打开`留言板`的`index.md`直接在里面设置样式。
+- 复制样式代码：
+ {% folding green, 留言板样式 %}
+    ```
+     <div style="margin-top:2.5rem;text-align:center">
+     <span class="milky">💬留言板</span>
+     </div>
+     <br/>
+     {% p,😘 是我，是我，就是我！%}
+
+     <div class="poem-wrap">
+     <div class="poem-border poem-left"></div>
+      <div class="poem-border poem-right"></div>
+     <h1>说给你听</h1>
+     <p id="poem">挑选中...</p>
+     <p id="info">
+      </div>
+
+     {% p,有什么想说的，有什么想问，就在下方留言吧，收到我会第一时间回复！请尽情灌水吧！😉 %}
+
+     <script>
+     $.get("https://v1.hitokoto.cn?c=i&c=j", function (data, status) {
+        if (status == 'success') {
+            $('#poem').html(data.hitokoto);
+            if (data.from_who != null) {
+                $('#info').html(data.from_who + " · " + "《 " + data.from + " 》");
+            } else {
+                $('#info').html(data.from);
+            }
+        } else {
+            $('#poem').html("获取出错啦");
+        }
+     });
+     </script>
+     <style>
+      .milky {
+        font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+       font-size: 25px;
+       letter-spacing: 0.1em;
+       color: #333333;
+       font-weight: 700;
+       padding: 10px 20px;
+       border-radius: 20px;
+       background: linear-gradient(rgb(255, 102, 102) 0px, rgb(255, 102, 51) 100%);
+     }
+     .poem-wrap {
+       position: relative;
+       width: 730px;
+       max-width: 80%;
+       border: 2px solid #797979;
+       border-top: 0;
+       text-align: center;
+     margin: 80px auto;
+     }
+
+      .poem-wrap h1 {
+        position: relative;
+        margin-top: -20px;
+        display: inline-block;
+        letter-spacing: 4px;
+        color: #797979;
+      border-bottom: none;
+      }
+
+     .poem-wrap p {
+       width: 70%;
+       margin: auto;
+       line-height: 30px;
+       color: #797979;
+     }
+
+     .poem-wrap p#poem {
+      text-align: center;
+      font-size: 25px;
+     }
+
+     .poem-wrap p#info {
+       text-align: center;
+       font-size: 15px;
+       margin: 15px auto;
+     }
+
+     .poem-border {
+      position: absolute;
+      height: 2px;          
+      width: 27%;
+      background-color: #797979;
+     }
+
+     .poem-right {
+      right: 0;
+     }
+
+     .poem-left {
+      left: 0;
+     }
+
+     @media (max-width: 685px) {
+     .poem-border {
+        width: 18%;
+      }
+     }
+
+     @media (max-width: 500px) {
+     .poem-wrap {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        border-top: 2px solid #797979;
+     }
+
+     .poem-wrap h1 {
+        margin: 20px 6px;
+     }
+
+     .poem-border {
+        display: none;
+      }
+      }
+     </style>
+    ```
+  {% endfolding %}
+
+### 3.5 关于我
+- 像上面那样，打开`关于我`的`index.md`直接在里面设置样式。
+- 复制样式代码：
+   {% folding green, 关于我样式 %}
+   ```
+    <div style="margin-top:2.5rem;text-align:center">
+    <span class="milky">😎 关于我</span>
+    </div>
+    <br/>
+    <style>
+  .milky {
+     font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+     font-size: 25px;
+     letter-spacing: 0.1em;
+     color: #333333;
+     font-weight: 700;
+     padding: 10px 20px;
+     border-radius: 20px;
+     background: linear-gradient(rgb(255, 102, 102) 0px, rgb(255, 102, 51) 100%);
+   }
+   </style>
+
+  {# Botui聊天机器人样式 #}
+   <link rel="stylesheet" href="/css/botui.min.css" />
+   {# <link rel="stylesheet" href="/css/botui-theme-default.css" /> #}
+
+  <div>
+    <div id="hello-xuxuy" class="pop-container">
+        <p style="text-align: center;">编号89757为您服务</p>
+        <p style="text-align: center;">请您按提示点击按钮</p>
+        <bot-ui></bot-ui>
+    </div>
+  </div>
+
+  {# Botui聊天机器人js #}
+  <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+  <script src="/js/botui.js"></script>
+  <script src="/js/botui-message.js"></script>
+   ```
+  {% endfolding %}
+- 不同的是，因为`关于我`的界面里引用了`css`,`js`文件，因此我们要创建它。
+  - ` css`代码位置，`themes\volantis\source\css`中创建`botui.min.css`。(只有一个`css`文件创建，下一个是被注释掉的)
+    ```
+     /*
+     * botui 0.3.9
+     * A JS library to build the UI for your bot
+     * https://botui.org
+     *
+     * Copyright 2019, Moin Uddin
+     * Released under the MIT license.
+     */
+
+     a.botui-message-content-link:focus{outline:thin dotted}a.botui-message-content-link:focus:active,a.botui-message-content-link:focus:hover{outline:0}form.botui-actions-text{margin:0}button.botui-actions-buttons-button,input.botui-actions-text-input{margin:0;font-size:100%;line-height:normal;vertical-align:baseline}button.botui-actions-buttons-button::-moz-focus-inner,input.botui-actions-text-input::-moz-focus-inner{border:0;padding:0}button.botui-actions-buttons-button{cursor:pointer;-webkit-appearance:button}
+     .botui-app-container{width:100%;height:100%;line-height:1}@media (min-width:400px){.botui-app-container{width:400px;height:500px;margin:0 auto}}.botui-container    {width:100%;height:100%;overflow-y:auto;overflow-x:hidden}.botui-message{margin:10px 0;min-height:20px}.botui-message:after{display:block;content:"";clear:both}.botui-message-content{width:auto;max-width:75%;display:inline-block}.botui-message-content.human{float:right}.botui-message-content iframe{width:100%}.botui-message-content-image{margin:5px 0;display:block;max-width:200px;max-height:200px}.botui-message-content-link{text-decoration:underline}.profil{position:relative;border-radius:50%}.profil.human{float:right;margin-left:5px}.profil.agent{float:left;margin-right:5px}.profil>img{width:26px;height:26px;border:2px solid #e8e8e8}.profil>img.agent{content:url(http://decodemoji.com/img/logos/blue_moji_hat.svg);border-radius:50%}button.botui-actions-buttons-button{margin-top:10px;margin-bottom:10px}button.botui-actions-buttons-button:not(:last-child){margin-right:10px}@media (min-width:400px){.botui-actions-text-submit{display:none}}
+    ```
+  - `js`文件有两个分别创建即可，代码位置themes\volantis\source\js，创建`botui.js`和`botui-message.js`。
+    [botui.js地址](https://github.com/XuxuGood/XuxuGood.github.io/blob/master/js/botui.js)
+    [botui-message.js地址](https://github.com/XuxuGood/XuxuGood.github.io/blob/master/js/botui-message.js)
+  - `botui-message.js`里面的个人回复自定义即可。  
+
+### 3.6 彩色标签云
+请移步黑石大佬的博客[给博客增加彩色标签云](https://www.heson10.com/posts/5892.html)
+可以不合并`标签页面`跟`归档页面`。
+
+## 4 其他美化
+### 4.1 分割符美化
+  - 效果如图：  
+  ![分隔符](https://i.loli.net/2021/02/26/GJ58M4fybdvnXFm.png)
+  - **参考博文**：[美化分隔符-hr-样式](https://bestzuo.cn/posts/halo-beauty.html#2%E7%BE%8E%E5%8C%96%E5%88%86%E9%9A%94%E7%AC%A6-hr-%E6%A0%B7%E5%BC%8F)  
+  - 代码位置，在`themes\volantis\source\css`文件夹中`style.styl`文件里面加入以下代码：  
+    ```styl
+    /* 美化 hr 样式 */
+    hr {
+    position: relative;
+    margin: 2rem auto;
+    width: calc(100% - 4px);
+    border: 2px dashed #a4d8fa;
+    background: #fff;
+    }
+    hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    }
+    hr:before {
+    position: absolute;
+    top: -10px;
+    left: 5%;
+    z-index: 1;
+    color: #49b1f5;
+    content: '\f0c4';
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    } 
+    hr:hover::before{
+    left: 95%;
+    }
+    ```
+
+### 4.2 评论区虚线框
+  - 效果如图：
+    ![评论区虚线框](https://i.loli.net/2021/02/26/5MGJLjtDiQwFIds.png)
+  - 代码位置，`themes\volantis\source\css`文件夹中，在`style.styl`中后面添加代码：
+      ```styl
+      .tk-comment {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      word-break: break-all;
+      padding: 15px 20px 0 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px dashed rgba(198,51,0,.3);
+      border-top-color: rgba(198,51,0,.3);
+      border-top-style: dashed;
+      border-top-width: 1px;
+      border-right-color: rgba(198,51,0,.3);
+      border-right-style: dashed;
+      border-right-width: 1px;
+      border-bottom-color: rgba(198,51,0,.3);
+      border-bottom-style: dashed;
+      border-bottom-width: 1px;
+      border-left-color: rgba(198,51,0,.3);
+      border-left-style: dashed;
+      border-left-width: 1px;
+      border-image-source: initial;
+      border-image-slice: initial;
+      border-image-width: initial;
+      border-image-outset: initial;
+      border-image-repeat: initial;
+      transition: all .3s;
+      } 
+      ```
+
+### 4.3 鼠标样式修改
+一开始我是全局改的，后来发现主题配置里面有，所以干脆在主题配置里面改算了。
+代码位置**主题配置文件**`_config.volantis.yml`，定位到以下代码。
+```yml
+cursor:
+    enable: true #此处开启
+    text: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png
+    pointer: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png  #https://cdn.jsdelivr.net/gh/zhou251/CDN@1.6/hexo-volantis/img/pointer.cur  
+    default: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png  #https://cdn.jsdelivr.net/gh/zhou251/CDN@1.6/hexo-volantis/img/default.cur #
+    not-allowed: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/circle.png
+    zoom-out: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-out.png
+    zoom-in: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-in.png
+    grab: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/openhand.png
+```
+

@@ -8,10 +8,9 @@ categories:
   - [教程,MARKDOWN]
 abbrlink: 25796
 date: 2021-02-17 11:29:55
-headimg: https://i.loli.net/2021/02/16/ODbMCALEm7uy5i2.png
+headimg: https://i.loli.net/2021/02/25/U13Sn8ED6AlrpzY.jpg
 ---
-啊还是卡号是付款计划附件红色袈裟理科积分阿克苏贷记卡圣诞节
-阿萨的咯技术的卡仕达
+初次接触markdown做一个总结。写完才觉得没必要。
 
 <!--more-->
 

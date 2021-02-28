@@ -232,7 +232,23 @@
         display: flex;
         float: right;
     }
-
+    @media screen and (max-width:750px) {
+        #RightDownBtn {
+        position: fixed;
+        right: 2rem;
+        bottom: 6rem;
+        padding: 0.3125rem 0.625rem;
+        background: #fff;
+        border-radius: 0.1875rem;
+        transition: 0.3s ease all;
+        z-index: 1;
+        align-items: flex-end;
+        flex-direction: column;
+        display: -moz-flex;
+        display: none;
+        float: right;
+    }
+}
     #RightDownBtn>a,
     #RightDownBtn>label {
         width: 1.5em;

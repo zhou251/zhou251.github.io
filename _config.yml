@@ -17,7 +17,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://zhou251.top/
+url: https://zhou251.github.io/
 root: /
 permalink: posts/:abbrlink/ #:year/:month/:day/:title/ #:abbrlink/ 
 # abbrlink config
@@ -39,6 +39,8 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render: 
     - "love/**"
+    - "webstack/**"
+    
 
 # Writing
 new_post_name: :title.md # File name of new posts
