@@ -4,6 +4,43 @@
   
     
     <entry>
+      <title>volantis添加aplayer</title>
+      <link href="posts/14478/"/>
+      <url>posts/14478/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>我本来是用内置的<code>aplayer</code>的，但是不知道为什么我的<code>aplayer</code>老是放完一首就停了。<br>而且控制界面比较单调，索性关了内置的，再加一个<code>aplayer</code>。</p><span id="more"></span><ul><li><strong>参考文章</strong>：<a href="https://github.com/MoePlayer/hexo-tag-aplayer">hexo-tag-aplayer插件</a></li><li>安装：<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install <span class="comment">--save hexo-tag-aplayer</span></span><br></pre></td></tr></table></figure></li><li>配置<code>MeingJS support</code>,在<strong>博客站点配置文件</strong><code>_config.yml</code>中配置：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">aplayer:</span></span><br><span class="line"><span class="attr">meting:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li><li>添加代码，在<code>\themes\volantis\layout</code>文件夹中，修改<code>layout.ejs</code>在<code>body</code>前面加上如下代码即可：<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="attribute">id</span>=<span class="string">&quot;aplayer-ieLZIPAR&quot;</span> <span class="attribute">class</span>=<span class="string">&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;</span> <span class="attribute">data-id</span>=<span class="string">&quot;7872981088&quot;</span> <span class="attribute">data-server</span>=<span class="string">&quot;tencent&quot;</span> <span class="attribute">data-type</span>=<span class="string">&quot;playlist&quot;</span> <span class="attribute">data-mode</span>=<span class="string">&quot;circulation&quot;</span> <span class="attribute">data-autoplay</span>=<span class="string">&quot;false&quot;</span> <span class="attribute">data-mutex</span>=<span class="string">&quot;true&quot;</span> <span class="attribute">data-listmaxheight</span>=<span class="string">&quot;340px&quot;</span> <span class="attribute">data-preload</span>=<span class="string">&quot;auto&quot;</span> <span class="attribute">data-theme</span>=<span class="string">&quot;#ad7a86&quot;</span> <span class="attribute">data-fixed</span>=<span class="string">&quot;true&quot;</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></li><li>上述代码具体个性化（即选取哪个平台，播放形式，aplayer样式）配置,请参考<a href="https://github.com/MoePlayer/hexo-tag-aplayer">hexo-tag-aplayer插件</a>中的<code>meting options</code>修改。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+          <category> HEXO </category>
+          
+          <category> VOLANTIS </category>
+          
+          <category> VPLANTIS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BLOG </tag>
+            
+            <tag> HEXO </tag>
+            
+            <tag> VPLANTIS </tag>
+            
+            <tag> 个性化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>右侧小侧边栏的个性化</title>
       <link href="posts/58643/"/>
       <url>posts/58643/</url>
@@ -15,9 +52,9 @@
           
           <category> 教程 </category>
           
-          <category> VOLANTIS </category>
-          
           <category> HEXO </category>
+          
+          <category> VOLANTIS </category>
           
           <category> VOLANTIS </category>
           
@@ -30,9 +67,9 @@
             
             <tag> HEXO </tag>
             
-            <tag> VOLANTIS </tag>
-            
             <tag> 个性化 </tag>
+            
+            <tag> VOLANTIS </tag>
             
         </tags>
       
@@ -52,9 +89,9 @@
           
           <category> 教程 </category>
           
-          <category> VOLANTIS </category>
-          
           <category> HEXO </category>
+          
+          <category> VOLANTIS </category>
           
           <category> VOLANTIS </category>
           
@@ -65,9 +102,9 @@
             
             <tag> HEXO </tag>
             
-            <tag> VOLANTIS </tag>
-            
             <tag> 个性化 </tag>
+            
+            <tag> VOLANTIS </tag>
             
         </tags>
       
