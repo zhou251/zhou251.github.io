@@ -6,7 +6,7 @@
   <link href="https://zhou251.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhou251.github.io/"/>
-  <updated>2021-02-28T14:26:10.971Z</updated>
+  <updated>2021-03-01T07:14:07.257Z</updated>
   <id>https://zhou251.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhou251.github.io/posts/14478/"/>
     <id>https://zhou251.github.io/posts/14478/</id>
     <published>2021-02-28T14:07:24.000Z</published>
-    <updated>2021-02-28T14:26:10.971Z</updated>
+    <updated>2021-03-01T07:14:07.257Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>我本来是用内置的<code>aplayer</code>的，但是不知道为什么我的<code>aplayer</code>老是放完一首就停了。<br>而且控制界面比较单调，索性关了内置的，再加一个<code>aplayer</code>。</p><span id="more"></span><ul><li><strong>参考文章</strong>：<a href="https://github.com/MoePlayer/hexo-tag-aplayer">hexo-tag-aplayer插件</a></li><li>安装：<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install <span class="comment">--save hexo-tag-aplayer</span></span><br></pre></td></tr></table></figure></li><li>配置<code>MeingJS support</code>,在<strong>博客站点配置文件</strong><code>_config.yml</code>中配置：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">aplayer:</span></span><br><span class="line"><span class="attr">meting:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li><li>添加代码，在<code>\themes\volantis\layout</code>文件夹中，修改<code>layout.ejs</code>在<code>body</code>前面加上如下代码即可：<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="attribute">id</span>=<span class="string">&quot;aplayer-ieLZIPAR&quot;</span> <span class="attribute">class</span>=<span class="string">&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;</span> <span class="attribute">data-id</span>=<span class="string">&quot;7872981088&quot;</span> <span class="attribute">data-server</span>=<span class="string">&quot;tencent&quot;</span> <span class="attribute">data-type</span>=<span class="string">&quot;playlist&quot;</span> <span class="attribute">data-mode</span>=<span class="string">&quot;circulation&quot;</span> <span class="attribute">data-autoplay</span>=<span class="string">&quot;false&quot;</span> <span class="attribute">data-mutex</span>=<span class="string">&quot;true&quot;</span> <span class="attribute">data-listmaxheight</span>=<span class="string">&quot;340px&quot;</span> <span class="attribute">data-preload</span>=<span class="string">&quot;auto&quot;</span> <span class="attribute">data-theme</span>=<span class="string">&quot;#ad7a86&quot;</span> <span class="attribute">data-fixed</span>=<span class="string">&quot;true&quot;</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></li><li>上述代码具体个性化（即选取哪个平台，播放形式，aplayer样式）配置,请参考<a href="https://github.com/MoePlayer/hexo-tag-aplayer">hexo-tag-aplayer插件</a>中的<code>meting options</code>修改。</li></ul>]]></content>
     
@@ -34,9 +34,9 @@
     
     <category term="HEXO" scheme="https://zhou251.github.io/categories/HEXO/"/>
     
-    <category term="VOLANTIS" scheme="https://zhou251.github.io/categories/HEXO/VOLANTIS/"/>
+    <category term="VOLANTIS" scheme="https://zhou251.github.io/categories/%E6%95%99%E7%A8%8B/VOLANTIS/"/>
     
-    <category term="VPLANTIS" scheme="https://zhou251.github.io/categories/%E6%95%99%E7%A8%8B/VPLANTIS/"/>
+    <category term="VOLANTIS" scheme="https://zhou251.github.io/categories/HEXO/VOLANTIS/"/>
     
     
     <category term="BLOG" scheme="https://zhou251.github.io/tags/BLOG/"/>
