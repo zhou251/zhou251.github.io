@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>SQL复习（1）</title>
+      <link href="posts/39134/"/>
+      <url>posts/39134/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>最近做一个数据库的复习。<br>相关书籍：<a href="https://www.ituring.com.cn/book/1880">SQL基础教程（第2版）</a><br>相关视频：<a href="https://www.bilibili.com/video/av62315714">Master_Lisa录制的学习视频</a></p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人总结，数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据库基础 </tag>
+            
+            <tag> SQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>volantis添加aplayer</title>
       <link href="posts/14478/"/>
       <url>posts/14478/</url>
