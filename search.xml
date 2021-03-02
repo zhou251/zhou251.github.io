@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>将qq音乐歌单以文本格式批量导出</title>
+      <link href="posts/26806/"/>
+      <url>posts/26806/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>恰好有这个需求，恰好我又看到实现方法。<br>原地址请看这里：<a href="https://post.smzdm.com/p/alpz4vgp/">qq音乐歌单 导入 Apple Music</a></p><span id="more"></span><ul><li><p>打开这个<a href="https://c.y.qq.com/v8/fcg-bin/fcg_v8_playlist_cp.fcg">网址</a></p></li><li><p>打开浏览器开发者工具（Mac一般是command+shift+i，Windows一般是F12）,在Console里面复制以下代码，将中文部分<code>[歌单id]</code>全部替换为歌单实际的数字id(数字id查询详见<a href="https://zhou251.top/posts/14591/">volantis主题个性化记录</a>中<code>1.2 aplayer固定位置</code>部分)。</p></li><li><details green><summary> 代码在此 </summary>              <div class='content'>              <figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">  (<span class="name">function</span> () &#123;</span><br><span class="line">    var script = document.createElement(<span class="string">&quot;SCRIPT&quot;</span>)<span class="comment">;</span></span><br><span class="line">    script.src = &#x27;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#x27;;</span><br><span class="line">    script.type = &#x27;text/javascript&#x27;;</span><br><span class="line">    document.getElementsByTagName(<span class="string">&quot;head&quot;</span>)[<span class="number">0</span>].appendChild(<span class="name">script</span>)<span class="comment">;</span></span><br><span class="line"></span><br><span class="line">    var checkReady = function (<span class="name">callback</span>) &#123;</span><br><span class="line">        if (<span class="name">window.jQuery</span>) &#123;</span><br><span class="line">            callback(<span class="name">jQuery</span>)<span class="comment">;</span></span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            window.setTimeout(<span class="name">function</span> () &#123; checkReady(<span class="name">callback</span>)<span class="comment">; &#125;, 100);</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="comment">;</span></span><br><span class="line"></span><br><span class="line">    checkReady(<span class="name">function</span> ($) &#123;</span><br><span class="line">        var text=<span class="string">&quot;&quot;</span><span class="comment">;</span></span><br><span class="line">        $.ajax(&#123;</span><br><span class="line"></span><br><span class="line">            url: <span class="string">&quot;https://c.y.qq.com/v8/fcg-bin/fcg_v8_playlist_cp.fcg?id=[歌单id]&amp;cv=60102&amp;ct=19&amp;newsong=1&amp;tpl=wk&amp;g_tk=5381&amp;loginUin=0&amp;hostUin=0&amp;format=json&amp;inCharset=GB2312&amp;outCharset=utf-8&amp;notice=0&amp;platform=jqspaframe.json&amp;needNewCode=0&quot;</span>,</span><br><span class="line">            async:false,</span><br><span class="line">            dataType:<span class="string">&quot;json&quot;</span>,</span><br><span class="line">            success:function(<span class="name">data</span>)&#123;</span><br><span class="line">                var songlist = data.data.cdlist[<span class="number">0</span>].songlist;</span><br><span class="line">                for(<span class="name"><span class="builtin-name">var</span></span> i=0;i &lt; songlist.length; i++)&#123;</span><br><span class="line">                    var tmp = songlist[i]<span class="comment">;</span></span><br><span class="line">                    text += tmp.singer[<span class="number">0</span>].name +<span class="string">&quot; - &quot;</span>+ tmp.name+<span class="string">&quot;&lt;br&gt;&quot;</span><span class="comment">;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)<span class="comment">;</span></span><br><span class="line"></span><br><span class="line">        $(<span class="name">&#x27;body&#x27;</span>).empty()<span class="comment">;</span></span><br><span class="line">        $(<span class="name">&#x27;body&#x27;</span>).append(<span class="string">&quot;&lt;div&gt;&quot;</span>+text+<span class="string">&quot;&lt;/div&gt;&quot;</span>)<span class="comment">;</span></span><br><span class="line">    &#125;)<span class="comment">;</span></span><br><span class="line"></span><br><span class="line">&#125;)()<span class="comment">;</span></span><br></pre></td></tr></table></figure>              </div>            </details>   </li><li><p>回车执行</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 转载 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> QQ音乐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SQL复习（1）</title>
       <link href="posts/39134/"/>
       <url>posts/39134/</url>
