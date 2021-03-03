@@ -3,6 +3,7 @@ title: volantis主题个性化记录
 author: zhou251
 headimg: 'https://i.loli.net/2021/02/22/6apRMC3hwTX2FsL.jpg'
 tags:
+  - BLOG
   - HEXO
   - VOLANTIS
   - 个性化
@@ -12,11 +13,13 @@ categories:
 abbrlink: 14591
 date: 2021-02-22 17:38:01
 ---
->在接触了yilia，next和volantis之后，最终选择了volantis。  
->选择volantis有以下几点原因：  
->- 颜值高
->- 易于上手
->- [Volantis官方文档](https://volantis.js.org/v4/getting-started/)写的很详细<br/> 
+{% noteblock blue,  %}
+在接触了yilia，next和volantis之后，最终选择了volantis。  
+选择volantis有以下几点原因：  
+- 颜值高
+- 易于上手
+- [Volantis官方文档](https://volantis.js.org/v4/getting-started/)写的很详细<br/> 
+{% endnoteblock %}
   
 个性化路上参考了几位大佬的博客，他们分别是：
 - [TRHX'S BLOG](https://www.itrhx.com/)
@@ -495,7 +498,7 @@ aplayer:
 
 ### 1.5 标题制作
 我的标题制作使用ppt实现的。效果如图：
-![](https://i.loli.net/2021/02/22/TQZkstSwVyRjPvL.png)
+![](https://i.loli.net/2021/03/02/GpIySgAQKEOMLYW.png)
 - 首先下载[王羲之字体](https://www.ypppt.com/article/2018/5370.html)，并安装，如何安装请自行[百度](www.baidu.com)。
 - 进入ppt软件中画一个文本框，里面写你的标题，字体设置为王羲之字体。
 - 修改样式。
@@ -724,7 +727,7 @@ navbar:
   <script src="/js/typewriter-color.js"></script>
   ```
 
-#### 2.4.4 社交图标选取
+#### 2.2.4 社交图标选取
 社交图标我使用的是这一套[social图标](https://www.flaticon.com/packs/social-media-73)以及[阿里巴巴矢量图标库](https://www.iconfont.cn/)里面的图标。
 下载png格式，在**主题配置文件**`_config.volantis.yml`中定位到社交按钮处。
 ```yml
@@ -733,6 +736,79 @@ social:
           img: #图标链接填这里，请使用图床生成直链。
           url: #网站直链
 ```
+
+#### 2.2.5 侧边添加地图样式访客来源
+无意间看见的，觉得挺有意思的。
+**效果**：![](https://i.loli.net/2021/03/03/U6G8It4p3YQsz7w.png)
+**参考文章**：[hexo(butterfly)加入clustrmaps访问者地图](https://blog.csdn.net/cungudafa/article/details/105925710)
+原文的主题是`butterfly`,`volantis`的实现方法与其有些不同。
+- [注册账号](https://clustrmaps.com/)
+- 步骤如下，复制代码即可
+  1. ![](https://i.loli.net/2021/03/03/jFpNvR5DW9S8LZJ.png)
+  2. ![](https://i.loli.net/2021/03/03/FVzgJy2xRfOCvTA.png)
+  3. ![](https://i.loli.net/2021/03/03/nuQy9q3BFjfPXCU.png)
+  4. ![](https://i.loli.net/2021/03/03/PGCYsEU1LtVaZg6.png)
+- 侧边栏添加一栏放置地图。参考官方的文档[通用页面部件](https://volantis.js.org/v4/theme-settings/)。
+  1. 先新建一个`maps`页面。
+      ```
+      hexo n page maps
+      ```
+  2. 然后设置`maps.md`
+      ```
+           ---
+           title: 
+           author: zhou251
+           date: 2021-03-03 11:58:28
+           top_meta: false
+           bottom_meta: false
+           sidebar: []
+           pid: maps
+           ---
+           {% p, 点击⬆️标题 👀详细数据%}
+           <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=240&t=m&d=nPT3klgaM48VqrrmUwHa0jKmRM0-En6O2ErQ0DCeQdg&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+
+           <style>
+           .l_side>.widget.page>.content {
+               padding-top: 10px;
+               padding-left: 12px;
+               padding-right: 12px;
+               padding-bottom: 10px;
+           }
+            </style>
+       ```
+       这里是我的样式参数，你们自己改。注意`front-matter`上面有一个`pid`这个后面要用。
+   3. 打开**主题配置文件**`_config.volantis.yml`，定位到以下代码。
+       ```yml
+           sidebar:
+           # 主页、分类、归档等独立页面
+           for_page: [repos, blogger, tagcloud, category, qrcode, recentpost, maps, webinfo]
+           # layout: docs/post 这类文章页面
+           for_post: [toc]
+           # 侧边栏组件库
+           widget_library:
+             # ---------------------------------------
+             # blogger info widget
+             blogger:
+               class: blogger
+        ```
+        **侧边栏组件库**中添加`maps`组件。
+        ```yml
+         maps:
+         class: page
+         display: [desktop, mobile]
+         header:
+           icon: iconfont iconmaps-pin
+           title: 访客来源
+           url: https://clustrmaps.com/site/1bgj8
+         pid: maps
+         content: content # excerpt, more, content
+         ```
+        再去`for_page`处（上述第一处代码）中开启`maps`，即可。
+{% noteblock info red, 注意 %}
+- 我在四个浏览器上试过，分别是谷歌浏览器，Edge，火狐浏览器，Yandex。Edge会吞地图，我也不知道为什么。
+- 科学上网访问时，地图的背景色会盖住地图。
+{% endnoteblock %}
+
 
 ## 3 导航栏中分栏目页面样式
 这里选取几个典型的，恋爱纪念，相册，碎碎念，留言板，关于我，彩色标签云。
@@ -1077,4 +1153,5 @@ cursor:
     zoom-in: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-in.png
     grab: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/openhand.png
 ```
+
 

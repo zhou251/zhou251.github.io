@@ -19,6 +19,6 @@ sidebar: []
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 20px;
-    background: linear-gradient(rgb(255, 102, 102) 0px, rgb(255, 102, 51) 100%);
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 </style>

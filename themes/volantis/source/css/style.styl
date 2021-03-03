@@ -30,7 +30,7 @@ body {
 }
 
 .l_side .toc-wrapper .toc-item.active>.toc-link {
-    color: #ff0000;
+    color: #9900FF;
     border-left: 2px solid #ff6666;
 }
 
@@ -182,4 +182,107 @@ hr:hover::before{
 #wrapper .menu {
     order: 1;
     margin-right: 400px;
+}
+
+//代码样式
+div.note {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 16px;
+    padding-left: calc(16px + 16px);
+    border-radius: 4px;
+    font-size: .9375rem;
+    background: #FFFF99;
+    border-left: 4px solid #44d7b6;
+}
+.highlight pre .comment {
+    color: #999999;
+}
+.highlight pre .attr, .highlight pre .attribute, .highlight pre .title {
+    color: #888888;
+}
+.highlight pre .meta-string, .highlight pre .string {
+    color: #CCFF99;
+}
+.highlight pre .line, .highlight pre .params {
+    color: #999999;
+}
+.highlight {
+    position: relative;
+    width: 100%;
+    margin: 1em 0;
+    display: block;
+    background: #222222;
+    font-size: .8125rem;
+    font-family: Menlo,UbuntuMono,Monaco,monospace,courier,sans-serif;
+    border-radius: 4px;
+    line-height: 1.5;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    overflow: hidden;
+    transition: all .28s ease;
+    -moz-transition: all .28s ease;
+    -webkit-transition: all .28s ease;
+    -o-transition: all .28s ease;
+}
+.highlight>table .gutter {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 0 12px;
+    text-align: right;
+    border-width: 0;
+    margin-left: 0;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #222222;
+}
+
+//页脚左右文章跳转
+.l_main .article .prev-next>a {
+    width: 100%;
+    padding: 8px;
+    color: #9966FF;
+    background: #CCCCFF;
+    border-radius: 4px;
+}
+
+//文章开头更新信息
+.l_main .post .article-meta .new-meta-box .new-meta-item a, .l_main .post .article-meta .new-meta-box .new-meta-item p {
+    color: #333333;
+    padding: 3px 0;
+}
+
+//代码块标题颜色
+.DarkMode details>summary {
+    background: #aaaaaa;
+}
+
+//notion 卡片
+.DarkMode .md .link-card {
+    margin-right: 1em;
+    background: #333;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    width: 361px;
+    max-width: 100%;
+    box-shadow: 0 1px 2px 0 #000;
+    color: #e9e9e9;
+    border-radius: 8px;
+}
+.md .link-card p.url {
+    flex-shrink: 0;
+    color:  #aaaaaa;
+    font-size: .8125rem;
+}
+
+//暗黑模式高亮
+.DarkMode .article code {
+    background: #333 !important;
+    border: none;
 }

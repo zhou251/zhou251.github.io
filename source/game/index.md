@@ -20,7 +20,7 @@ sidebar: []
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 20px;
-    background: linear-gradient(rgb(255, 102, 102) 0px, rgb(255, 102, 51) 100%);
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
 </style>
 {% tabs 1 %}

@@ -19,7 +19,7 @@ sidebar: []
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 20px;
-    background: linear-gradient(rgb(255, 102, 102) 0px, rgb(255, 102, 51) 100%);
+    background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
 }
 </style>
 

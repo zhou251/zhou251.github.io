@@ -17,7 +17,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://zhou251.github.io/
+url: https://zhou251.top/
 root: /
 permalink: posts/:abbrlink/ #:year/:month/:day/:title/ #:abbrlink/ 
 # abbrlink config
@@ -74,7 +74,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 5
+  per_page: 4
   order_by: -date
 
 # Category & Tag
@@ -249,5 +249,13 @@ import:
     - "<link rel='stylesheet' href='/css/iconfont.css'>"
     - "<link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/zhou251/CDN@1.1/hexo-volantis/img/可达鸭.ico'>"
     -  <link type='text/css' rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" media='all'/>
+   
   script:
     - <script src="http://at.alicdn.com/t/font_2378660_to62xmvf0i.js" type="text/javascript"></script>
+  
+  
+# 添加APlayer音乐播放器，官网：https://aplayer.js.org
+# github: https://github.com/MoePlayer/APlayer
+aplayer:
+  meting: true
+  
