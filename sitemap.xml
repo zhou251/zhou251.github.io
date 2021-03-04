@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhou251.top/baidu_verify_code-WdVmqrvzKI.html</loc>
+    
+    <lastmod>2021-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhou251.top/test/index.html</loc>
     
     <lastmod>2021-03-04</lastmod>
@@ -279,13 +286,6 @@
   </url>
   
   <url>
-    <loc>https://zhou251.top/categories/%E5%8D%9A%E6%96%87%E5%86%99%E4%BD%9C/</loc>
-    <lastmod>2021-03-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zhou251.top/categories/%E6%95%99%E7%A8%8B/MARKDOWN/</loc>
     <lastmod>2021-03-04</lastmod>
     <changefreq>daily</changefreq>
@@ -307,6 +307,20 @@
   </url>
   
   <url>
+    <loc>https://zhou251.top/categories/%E5%8D%9A%E6%96%87%E5%86%99%E4%BD%9C/</loc>
+    <lastmod>2021-03-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhou251.top/categories/%E8%BD%AC%E8%BD%BD/</loc>
+    <lastmod>2021-03-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhou251.top/categories/HEXO/</loc>
     <lastmod>2021-03-04</lastmod>
     <changefreq>daily</changefreq>
@@ -315,13 +329,6 @@
   
   <url>
     <loc>https://zhou251.top/categories/HEXO/VOLANTIS/</loc>
-    <lastmod>2021-03-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhou251.top/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2021-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
