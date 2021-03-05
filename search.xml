@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title></title>
+      <link href="posts/1/"/>
+      <url>posts/1/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note "><p><strong>图标意义</strong></p><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>绿色已完成</p>            </div><div class='checkbox plus blue'><input type="checkbox" />            <p>蓝色待办，也许很快完成，也许永远不会做</p>            </div><div class='checkbox times red checked'><input type="checkbox" checked="checked"/>            <p>放弃</p>            </div></div><span id="more"></span><div class="timeline"><p class='p h2'>VOLANTIS时间线</p><div class="timenode"><div class="meta"><p><p>2021.3.5</p></p></div><div class="body"><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>添加<a href="https://fly.zhou251.top/">butterfly分站</a></p>            </div><div class='checkbox plus blue'><input type="checkbox" />            <p>对butterfly，matery个性化</p>            </div><div class='checkbox plus blue'><input type="checkbox" />            <p>首页做成一个卡片式导航。volantis，butterfly，matery全部解析到二级域名</p>            </div><div class='checkbox plus blue'><input type="checkbox" />            <p>将内容分开，每个主题下投放不同领域的内容，这样看博客不会有一种大杂烩的感觉</p>            </div><div class='checkbox plus blue'><input type="checkbox" />            <p>优化网站体验，美化主题视觉</p>            </div></div></div><div class="timenode"><div class="meta"><p><p>2021.3.4</p></p></div><div class="body"><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>添加天气插件</p>            </div><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>添加访客来源地球插件</p>            </div></div></div><div class="timenode"><div class="meta"><p><p>2021.3.1</p></p></div><div class="body"><p>已经记不清啥时候陆陆续续搞得了，索性全放一天完成，影响不大。</p><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>完成volantis导航栏个性化</p>            </div><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>完成volantis侧边栏个性化</p>            </div><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>完成volantis分割线，鼠标特效，评论区个性化</p>            </div></div></div></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+          <category> VOLANTIS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 个人总结 </tag>
+            
+            <tag> VOLANTIS </tag>
+            
+            <tag> HEXO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>将qq音乐歌单以文本格式批量导出</title>
       <link href="posts/26806/"/>
       <url>posts/26806/</url>
@@ -69,9 +100,9 @@
           
           <category> 教程 </category>
           
-          <category> VOLANTIS </category>
-          
           <category> HEXO </category>
+          
+          <category> VOLANTIS </category>
           
           <category> VOLANTIS </category>
           
@@ -80,11 +111,11 @@
       
         <tags>
             
-            <tag> BLOG </tag>
+            <tag> VOLANTIS </tag>
             
             <tag> HEXO </tag>
             
-            <tag> VOLANTIS </tag>
+            <tag> BLOG </tag>
             
             <tag> 个性化 </tag>
             
@@ -106,9 +137,9 @@
           
           <category> 教程 </category>
           
-          <category> VOLANTIS </category>
-          
           <category> HEXO </category>
+          
+          <category> VOLANTIS </category>
           
           <category> VOLANTIS </category>
           
@@ -117,11 +148,11 @@
       
         <tags>
             
-            <tag> BLOG </tag>
+            <tag> VOLANTIS </tag>
             
             <tag> HEXO </tag>
             
-            <tag> VOLANTIS </tag>
+            <tag> BLOG </tag>
             
             <tag> 个性化 </tag>
             
@@ -143,9 +174,9 @@
           
           <category> 教程 </category>
           
-          <category> VOLANTIS </category>
-          
           <category> HEXO </category>
+          
+          <category> VOLANTIS </category>
           
           <category> VOLANTIS </category>
           
@@ -154,11 +185,11 @@
       
         <tags>
             
-            <tag> BLOG </tag>
+            <tag> VOLANTIS </tag>
             
             <tag> HEXO </tag>
             
-            <tag> VOLANTIS </tag>
+            <tag> BLOG </tag>
             
             <tag> 个性化 </tag>
             
